@@ -1,7 +1,9 @@
-.logo {
-    width: 100%;
-    max-width: 250px;
+.borda {
     position: absolute;
+    width: 100%;
+    max-width: 1200px;
     left: 50%;
-    margin-left: -125px;
+    margin-left: -600px;
+    margin-top: 50px;
+    z-index: -1;
 }
