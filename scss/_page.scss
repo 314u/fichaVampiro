@@ -125,18 +125,27 @@
 
         .pontos {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             margin-top: 2rem;
             flex-wrap: wrap;
+
+
 
             p {
                 border: none;
             }
 
             .desc {
+                &:nth-child(2) {
+                    input {
+                        width: 13px;
+                    }
+                }
+
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 2rem;
+                width: 32%;
 
                 input {
                     border-bottom: 1px dotted;
@@ -152,6 +161,22 @@
                 }
 
             }
+        }
+    }
+}
+
+.disciplinas {
+    .container {
+        p {
+            margin: 5px 0;
+            width: 99%;
+            text-align: center;
+            font-size: 19px;
+            padding-bottom: 5px;
+        }
+
+        td {
+            display: flex;
         }
     }
 }
