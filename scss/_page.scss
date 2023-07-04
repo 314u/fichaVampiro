@@ -166,17 +166,81 @@
 }
 
 .disciplinas {
+    p {
+        margin: 5px 0;
+        width: 99%;
+        text-align: center;
+        font-size: 19px;
+        padding-bottom: 5px;
+    }
+
     .container {
-        p {
-            margin: 5px 0;
-            width: 99%;
-            text-align: center;
-            font-size: 19px;
-            padding-bottom: 5px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        input {
+            border-bottom: 1px solid;
         }
 
-        td {
+        .disciplina {
+            width: 33%;
             display: flex;
+            flex-direction: column;
+            border-top: 1px solid;
+            border-right: 1px solid;
+
+
+
+            input[type="text"] {
+                height: 30px;
+                padding: 1rem;
+                font-size: 15px;
+                font-family: 'Lexend Peta', sans-serif;
+            }
+
+            &:first-child {
+                border-left: 1px solid;
+            }
+
+            &:nth-child(4) {
+                border-left: 1px solid;
+            }
+
+            &:nth-child(-n+6) {
+                border-top: none;
+            }
+
+            &:nth-child(-n+3) {
+                border-top: 1px solid;
+            }
+
+
+
+            .nome {
+                display: flex;
+
+                input {
+                    flex-grow: 1;
+                }
+
+                input[type="text"] {
+                    padding: 1rem;
+                    font-weight: 700;
+                    font-size: 15px;
+                    font-family: 'Lexend Peta', sans-serif;
+                }
+
+                .qtd-pontos {
+                    display: flex;
+                    align-items: center;
+                    width: 85px;
+                    border-bottom: 1px solid;
+                }
+            }
+
         }
+
+
     }
 }
