@@ -26,6 +26,12 @@
                 }
             }
         }
+
+        @include responsive(1200px) {
+            input {
+                font-size: 1rem;
+            }
+        }
     }
 }
 
@@ -162,7 +168,50 @@
 
             }
         }
+
+        @include responsive(1220px) {
+            .pontos {
+                .desc {
+
+                    max-width: 33%;
+
+                    span {
+                        white-space: nowrap;
+                    }
+
+                    input {
+                        font-size: 0.7rem;
+                    }
+
+                    .qnt-pontos {
+                        display: flex;
+                    }
+                }
+            }
+        }
+
+        @include responsive(965px) {
+            .pontos {
+                .desc {
+
+
+                    span {
+                        font-size: 1.3rem;
+                    }
+
+                    input {
+                        font-size: 0.6rem;
+                    }
+
+                    .qnt-pontos {
+                        display: flex;
+                    }
+                }
+            }
+        }
     }
+
+
 }
 
 .disciplinas {

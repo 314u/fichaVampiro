@@ -6,4 +6,14 @@
     margin-left: -600px;
     margin-top: 50px;
     z-index: -1;
+
+    @include responsive(1220px) {
+        max-width: 1000px;
+        margin-left: -500px;
+    }
+
+    @include responsive(965px) {
+        max-width: 800px;
+        margin-left: -400px;
+    }
 }
