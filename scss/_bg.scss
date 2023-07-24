@@ -9,11 +9,13 @@
 
     @include responsive(1220px) {
         max-width: 1000px;
-        margin-left: -500px;
+        top: 0;
+        left: 0;
+        margin: 0;
+        margin-left: 5px;
     }
 
     @include responsive(965px) {
         max-width: 800px;
-        margin-left: -400px;
     }
 }

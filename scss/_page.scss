@@ -1,6 +1,31 @@
+.content {
+    overflow-y: scroll;
+    position: absolute;
+    width: 100%;
+    max-width: 1200px;
+    left: 50%;
+    margin-left: -600px;
+    margin-top: 18rem;
+
+    @include responsive(1220px) {
+        height: 130rem;
+        top: 0;
+        left: 0;
+        margin: 0;
+        margin-top: 110px;
+        max-width: 100rem;
+
+    }
+
+    @include responsive(965px) {
+        max-width: 800px;
+        height: 1010px;
+    }
+}
+
 .info-personagem {
     .container {
-        padding-top: 200px;
+
 
         ul {
             display: flex;
@@ -28,8 +53,18 @@
         }
 
         @include responsive(1200px) {
+
+
             input {
                 font-size: 1rem;
+            }
+        }
+
+        @include responsive(965px) {
+
+
+            input {
+                font-size: 0.8rem;
             }
         }
     }
@@ -114,6 +149,16 @@
 
             }
         }
+
+        @include responsive(965px) {
+            .pontos {
+                .valores {
+                    .desc {
+                        padding: 0;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -133,81 +178,62 @@
             display: flex;
             justify-content: space-around;
             margin-top: 2rem;
-            flex-wrap: wrap;
-
-
 
             p {
                 border: none;
             }
 
-            .desc {
-                &:nth-child(2) {
-                    input {
-                        width: 13px;
-                    }
-                }
+            .section {
+                width: 33%;
 
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: 2rem;
-                width: 32%;
-
-                input {
-                    border-bottom: 1px dotted;
-                    flex-grow: 1;
-                    padding-left: 5px;
-                    font-family: 'Lexend Peta', sans-serif;
-                    font-size: 1rem;
-                }
-
-                span {
-                    font-size: 1.6rem;
-                    text-align: center;
-                }
-
-            }
-        }
-
-        @include responsive(1220px) {
-            .pontos {
                 .desc {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 2rem;
 
-                    max-width: 33%;
+                    input {
+                        border-bottom: 1px dotted;
+                        flex-grow: 1;
+                        padding-left: 5px;
+                        font-family: 'Lexend Peta', sans-serif;
+                        font-size: 1rem;
+                        overflow-x: hidden;
+                    }
 
                     span {
+                        font-size: 1.6rem;
                         white-space: nowrap;
                     }
 
-                    input {
-                        font-size: 0.7rem;
-                    }
-
                     .qnt-pontos {
                         display: flex;
+                        gap: 2px;
                     }
                 }
             }
+
         }
 
-        @include responsive(965px) {
+        @include responsive(770px) {
             .pontos {
-                .desc {
+                .section {
+                    .desc {
+                        span {
+                            font-size: 1.2rem;
+                        }
 
+                        input {
+                            font-size: 0.8rem;
+                        }
 
-                    span {
-                        font-size: 1.3rem;
-                    }
-
-                    input {
-                        font-size: 0.6rem;
-                    }
-
-                    .qnt-pontos {
-                        display: flex;
+                        .qnt-pontos {
+                            display: flex;
+                            gap: 1px;
+                        }
                     }
                 }
             }
+
         }
     }
 
@@ -246,6 +272,7 @@
                 padding: 1rem;
                 font-size: 15px;
                 font-family: 'Lexend Peta', sans-serif;
+                overflow-x: hidden;
             }
 
             &:first-child {
@@ -289,8 +316,6 @@
             }
 
         }
-
-
     }
 }
 
@@ -306,7 +331,7 @@
         }
 
         .ressonancia {
-
+            white-space: nowrap;
 
             input {
                 border-bottom: 1px dotted;
@@ -315,6 +340,8 @@
                 font-family: 'Lexend Peta', sans-serif;
                 font-size: 1.2rem;
                 font-weight: 600;
+                overflow-x: hidden;
+
             }
 
         }
@@ -339,6 +366,29 @@
             }
         }
 
+        @include responsive(1000px) {
+            justify-content: center;
+        }
+
+        @include responsive(965px) {
+            font-size: 1rem;
+            width: 70rem;
+            justify-content: space-around;
+
+            input {
+                max-width: 180px;
+            }
+
+            .humanidade,
+            .fome {
+                .pontos {
+                    .ponto {
+                        width: 1.5rem;
+                    }
+                }
+            }
+
+        }
     }
 }
 
@@ -350,6 +400,8 @@
 
         .vantagens,
         .defeitos {
+            width: 33%;
+
             strong {
                 font-size: 1.6rem;
                 font-weight: 700;
@@ -370,11 +422,13 @@
                     padding: 1rem;
                     font-size: 15px;
                     font-family: "Lexend Peta", sans-serif;
+                    overflow-x: hidden;
                 }
 
                 .qtd-pontos {
                     margin-right: 2px;
                     width: 8rem;
+                    white-space: nowrap;
                 }
             }
         }
@@ -396,6 +450,11 @@
                     font-weight: 700;
                 }
 
+                .qtd-pontos {
+                    margin-right: 2px;
+                    width: 8rem;
+                    white-space: nowrap;
+                }
             }
 
             table {
@@ -440,6 +499,53 @@
                     font-family: "Lexend Peta", sans-serif;
                     border-bottom: 1px solid;
                 }
+            }
+        }
+
+        @include responsive(1220px) {
+            .potencia-xp {
+                .potencia {
+                    width: 100%;
+                    justify-content: flex-start;
+                }
+
+                table {
+                    td {
+                        input {
+                            width: 12rem;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        @include responsive(965px) {
+            .potencia-xp {
+                margin-left: 0;
+
+                .potencia {
+                    .qtd-pontos {
+                        input {
+                            width: 1rem;
+                        }
+                    }
+                }
+
+                .xp {
+                    input {
+                        width: 18rem;
+                    }
+                }
+
+                table {
+                    td {
+                        input {
+                            width: 12rem;
+                        }
+                    }
+                }
+
             }
         }
     }
