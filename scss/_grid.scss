@@ -11,4 +11,8 @@
     @include responsive(965px) {
         max-width: 80rem;
     }
+
+    @include responsive(790px) {
+        max-width: 60rem;
+    }
 }

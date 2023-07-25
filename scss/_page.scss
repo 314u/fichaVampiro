@@ -21,6 +21,12 @@
         max-width: 800px;
         height: 1010px;
     }
+
+    @include responsive(790px) {
+        max-width: 600px;
+        height: 785px;
+        margin-top: 70px;
+    }
 }
 
 .info-personagem {
@@ -42,6 +48,7 @@
                 }
 
                 input {
+                    width: 70%;
                     margin-left: 5px;
                     flex-grow: 1;
                     background: none;
@@ -53,18 +60,39 @@
         }
 
         @include responsive(1200px) {
+            ul {
+                li {
 
-
-            input {
-                font-size: 1rem;
+                    label,
+                    input {
+                        font-size: 1.3rem;
+                    }
+                }
             }
+
         }
 
         @include responsive(965px) {
+            ul {
+                li {
 
+                    label,
+                    input {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
 
-            input {
-                font-size: 0.8rem;
+        @include responsive(790px) {
+            ul {
+                li {
+
+                    label,
+                    input {
+                        font-size: 1rem;
+                    }
+                }
             }
         }
     }
@@ -159,6 +187,18 @@
                 }
             }
         }
+
+        @include responsive(600px) {
+            .pontos {
+                .valores {
+                    .desc {
+                        span {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -214,7 +254,7 @@
 
         }
 
-        @include responsive(770px) {
+        @include responsive(790px) {
             .pontos {
                 .section {
                     .desc {
@@ -224,6 +264,10 @@
 
                         input {
                             font-size: 0.8rem;
+                        }
+
+                        input[type="radio"] {
+                            width: 1rem;
                         }
 
                         .qnt-pontos {
@@ -316,6 +360,32 @@
             }
 
         }
+
+        @include responsive(790px) {
+            .disciplina {
+                input[type="text"] {
+                    font-size: 1rem;
+                    padding: .5rem;
+                }
+
+                .nome {
+                    input[type="text"] {
+                        font-size: .8rem;
+                        padding: .5rem;
+                    }
+
+                    .qtd-pontos {
+                        width: auto;
+
+                        input[type="radio"] {
+                            width: 1rem;
+
+                        }
+                    }
+                }
+            }
+
+        }
     }
 }
 
@@ -371,9 +441,6 @@
         }
 
         @include responsive(965px) {
-            font-size: 1rem;
-            width: 70rem;
-            justify-content: space-around;
 
             input {
                 max-width: 180px;
@@ -388,6 +455,21 @@
                 }
             }
 
+        }
+
+        @include responsive(790px) {
+            strong {
+                font-size: 1rem;
+            }
+
+            .humanidade,
+            .fome {
+                .pontos {
+                    .ponto {
+                        width: 1rem;
+                    }
+                }
+            }
         }
     }
 }
@@ -542,6 +624,54 @@
                     td {
                         input {
                             width: 12rem;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        @include responsive(790px) {
+
+            .vantagens,
+            .defeitos {
+                width: 30%;
+
+                .vantagem {
+                    input[type="text"] {
+                        font-size: .7rem;
+                        padding: .5rem;
+                    }
+
+                    .qtd-pontos {
+                        width: auto;
+
+                        input[type="radio"] {
+                            width: 1rem;
+                        }
+                    }
+                }
+            }
+
+            .potencia-xp {
+                .potencia {
+                    .qtd-pontos {
+                        input {
+                            width: 1rem;
+                        }
+                    }
+                }
+
+                .xp {
+                    input {
+                        width: 10rem;
+                    }
+                }
+
+                table {
+                    td {
+                        input {
+                            width: 8rem;
                         }
                     }
                 }
