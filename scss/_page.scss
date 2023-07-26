@@ -51,12 +51,12 @@
     }
 
     @include responsive(395px) {
-        height: 490px;
+        height: 480px;
     }
 
     @include responsive(350px) {
         margin-top: 35px;
-        height: 415px;
+        height: 400px;
     }
 }
 
