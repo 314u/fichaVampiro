@@ -30,33 +30,40 @@
 
     @include responsive(595px) {
         height: 700px;
+        background: red;
     }
 
     @include responsive(550px) {
         max-width: 450px;
         height: 600px;
         margin-top: 50px;
+        background: green;
     }
 
     @include responsive(450px) {
         height: 580px;
+        background: blue;
     }
 
     @include responsive(435px) {
         height: 540px;
+        background: yellow;
     }
 
     @include responsive(415px) {
         height: 520px;
+        background: purple;
     }
 
     @include responsive(395px) {
         height: 480px;
+        background: pink;
     }
 
     @include responsive(350px) {
         margin-top: 35px;
         height: 400px;
+        background: black;
     }
 }
 
