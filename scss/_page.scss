@@ -37,6 +37,27 @@
         height: 600px;
         margin-top: 50px;
     }
+
+    @include responsive(450px) {
+        height: 580px;
+    }
+
+    @include responsive(435px) {
+        height: 540px;
+    }
+
+    @include responsive(415px) {
+        height: 520px;
+    }
+
+    @include responsive(395px) {
+        height: 490px;
+    }
+
+    @include responsive(350px) {
+        margin-top: 35px;
+        height: 415px;
+    }
 }
 
 .info-personagem {
@@ -250,6 +271,56 @@
                 }
             }
         }
+
+        @include responsive(450px) {
+
+            i {
+                font-size: 1.0rem;
+            }
+
+            .desc {
+                .qnt-pontos {
+                    input[type="radio"] {
+                        width: .9rem;
+                    }
+                }
+            }
+        }
+
+        @include responsive(380px) {
+
+            .desc {
+                .qnt-pontos {
+                    display: flex;
+
+                    input[type="radio"] {
+                        width: .9rem;
+                    }
+                }
+            }
+        }
+
+        @include responsive(350px) {
+            .pontos {
+                .valores {
+                    .desc {
+                        span {
+                            font-size: .8rem;
+                        }
+                    }
+                }
+            }
+
+            .desc {
+                .qnt-pontos {
+                    display: flex;
+
+                    input[type="radio"] {
+                        width: .8rem;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -280,6 +351,7 @@
                 .desc {
                     display: flex;
                     justify-content: space-between;
+                    align-items: center;
                     margin-bottom: 2rem;
 
                     input {
@@ -353,6 +425,54 @@
                         .qnt-pontos {
                             display: flex;
                             gap: 1px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include responsive(450px) {
+            .pontos {
+                .section {
+                    .desc {
+                        margin-bottom: 1rem;
+
+                        span {
+                            font-size: .9rem;
+                        }
+
+                        input {
+                            font-size: 0.6rem;
+                        }
+
+                        input[type="radio"] {
+                            width: .6rem;
+                        }
+
+                        .qnt-pontos {
+                            gap: 0px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include responsive(350px) {
+            .pontos {
+                .section {
+                    .desc {
+                        margin-bottom: 1rem;
+
+                        span {
+                            font-size: .7rem;
+                        }
+
+                        input {
+                            font-size: 0.5rem;
+                        }
+
+                        input[type="radio"] {
+                            width: .5rem;
                         }
                     }
                 }
@@ -493,6 +613,58 @@
             }
 
         }
+
+        @include responsive(405px) {
+
+            .disciplina {
+                input[type="text"] {
+                    font-size: .5rem;
+                    padding: .2rem;
+                }
+
+                .nome {
+                    input[type="text"] {
+                        font-size: .5rem;
+                        padding: .2rem;
+                    }
+
+                    .qtd-pontos {
+                        width: auto;
+
+                        input[type="radio"] {
+                            width: .6rem;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        @include responsive(350px) {
+
+            .disciplina {
+                input[type="text"] {
+                    font-size: .5rem;
+                    padding: .2rem;
+                }
+
+                .nome {
+                    input[type="text"] {
+                        font-size: .45rem;
+                        padding: .1rem;
+                    }
+
+                    .qtd-pontos {
+                        width: auto;
+
+                        input[type="radio"] {
+                            width: .6rem;
+
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -595,6 +767,50 @@
                 .pontos {
                     .ponto {
                         width: 1rem;
+                    }
+                }
+            }
+        }
+
+        @include responsive(395px) {
+
+
+            .ressonancia {
+                input {
+                    font-size: .8rem;
+                    max-width: 7rem;
+                }
+            }
+
+            .humanidade,
+            .fome {
+                .pontos {
+                    gap: 1px;
+
+                    .ponto {
+                        width: 1rem;
+                    }
+                }
+            }
+        }
+
+        @include responsive(350px) {
+
+
+            .ressonancia {
+                input {
+                    font-size: .5rem;
+                    max-width: 5rem;
+                }
+            }
+
+            .humanidade,
+            .fome {
+                .pontos {
+                    gap: .5px;
+
+                    .ponto {
+                        width: .8rem;
                     }
                 }
             }
@@ -851,6 +1067,131 @@
                     td {
                         input {
                             width: 5rem;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        @include responsive(430px) {
+
+            .vantagens,
+            .defeitos {
+                strong {
+                    font-size: 1rem;
+                }
+
+                .vantagem {
+                    input[type="text"] {
+                        font-size: .6rem;
+                        padding: .1rem;
+                    }
+
+                    .qtd-pontos {
+                        input[type="radio"] {
+                            width: .7rem;
+                        }
+                    }
+                }
+            }
+
+            .potencia-xp {
+                .potencia {
+                    span {
+                        font-size: 1rem;
+                    }
+
+                    .qtd-pontos {
+                        white-space: normal;
+                        width: 125px;
+
+                        input {
+                            width: 1rem;
+                        }
+                    }
+                }
+
+                .xp {
+                    strong {
+                        font-size: 1rem;
+                    }
+
+                    input {
+                        width: 8rem;
+                    }
+                }
+
+                table {
+                    td {
+                        span {
+                            font-size: 1rem;
+                        }
+
+                        input {
+                            width: 4rem;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        @include responsive(350px) {
+
+            .vantagens,
+            .defeitos {
+                .vantagem {
+                    input[type="text"] {
+                        font-size: .5rem;
+                        padding: .05rem;
+                    }
+
+                    .qtd-pontos {
+                        input[type="radio"] {
+                            width: .5rem;
+                        }
+                    }
+                }
+            }
+
+            .potencia-xp {
+                .potencia {
+                    flex-direction: column;
+
+                    span {
+                        white-space: nowrap;
+                        font-size: 1rem;
+                    }
+
+                    .qtd-pontos {
+                        white-space: normal;
+                        width: 125px;
+
+                        input {
+                            width: .8rem;
+                        }
+                    }
+                }
+
+                .xp {
+                    strong {
+                        font-size: 1rem;
+                    }
+
+                    input {
+                        width: 8rem;
+                    }
+                }
+
+                table {
+                    td {
+                        span {
+                            font-size: .8rem;
+                        }
+
+                        input {
+                            width: 3rem;
                         }
                     }
                 }

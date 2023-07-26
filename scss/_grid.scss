@@ -14,9 +14,15 @@
 
     @include responsive(790px) {
         max-width: 60rem;
+        padding: 0 15px;
     }
 
     @include responsive(550px) {
         max-width: 45rem;
+    }
+
+    @include responsive(350px) {
+        padding: 0 10px;
+        max-width: 320px;
     }
 }
