@@ -15,4 +15,8 @@
     @include responsive(790px) {
         max-width: 60rem;
     }
+
+    @include responsive(550px) {
+        max-width: 45rem;
+    }
 }

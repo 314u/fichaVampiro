@@ -22,4 +22,8 @@
     @include responsive(790px) {
         max-width: 600px;
     }
+
+    @include responsive(550px) {
+        max-width: 450px;
+    }
 }
