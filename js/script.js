@@ -26,6 +26,17 @@ function alterarHumanidade(componente) {
     estadoImg.alt = (indiceEstado + 1);
 }
 
+function trocarTema(tema) {
+    if (tema.alt === "ligth") {
+        document.body.classList.add("dark");
+        tema.alt = "dark";
+    }
+    else {
+        document.body.classList.remove("dark");
+        tema.alt = "ligth"
+    }
+}
+
 function radiobutton(componente) {
     if (componente.value == "1") {
         console.log("marcado");

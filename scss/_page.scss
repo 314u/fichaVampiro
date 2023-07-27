@@ -1,3 +1,50 @@
+body {
+    background-color: var(--bgcolor);
+
+    input[type="text"] {
+        background: var(--bgcolor);
+    }
+
+    input {
+        border-color: var(--border);
+    }
+
+    span,
+    p,
+    strong,
+    label {
+        color: var(--txtcolor);
+    }
+
+    @include responsive (1000px) {
+        input[type="radio"] {
+            width: 12px;
+            height: 12px;
+        }
+    }
+
+    @include responsive (790px) {
+        input[type="radio"] {
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    @include responsive (550px) {
+        input[type="radio"] {
+            width: 7px;
+            height: 7px;
+        }
+    }
+
+    @include responsive (350px) {
+        input[type="radio"] {
+            width: 6px;
+            height: 6px;
+        }
+    }
+}
+
 .content {
     overflow-y: auto;
     position: absolute;
@@ -60,34 +107,6 @@
     }
 }
 
-@include responsive (1000px) {
-    input[type="radio"] {
-        width: 12px;
-        height: 12px;
-    }
-}
-
-@include responsive (790px) {
-    input[type="radio"] {
-        width: 10px;
-        height: 10px;
-    }
-}
-
-@include responsive (550px) {
-    input[type="radio"] {
-        width: 7px;
-        height: 7px;
-    }
-}
-
-@include responsive (350px) {
-    input[type="radio"] {
-        width: 6px;
-        height: 6px;
-    }
-}
-
 .info-personagem {
     .container {
 
@@ -99,7 +118,7 @@
             li {
                 display: flex;
                 width: 33%;
-                border: 1px solid;
+                border: 1px solid var(--border);
                 padding: 10px;
 
                 label {
@@ -111,7 +130,7 @@
                     margin-left: 5px;
                     flex-grow: 1;
                     background: none;
-                    border-bottom: 1px solid #000;
+                    border-bottom: 1px solid var(--border);
                     padding-left: 5px;
                     font-family: 'Lexend Peta', sans-serif;
                 }
@@ -179,7 +198,7 @@
             text-align: center;
             font-size: 19px;
             padding-bottom: 5px;
-            border-bottom: 2px solid;
+            border-bottom: 2px solid var(--border);
         }
 
         .pontos {
@@ -194,7 +213,7 @@
                 width: 32%;
 
                 .desc {
-                    border-left: 1px solid;
+                    border-left: 1px solid var(--border);
                     display: flex;
                     justify-content: space-between;
                     padding: 2.5px 45px;
@@ -331,7 +350,7 @@
             text-align: center;
             font-size: 19px;
             padding-bottom: 5px;
-            border-bottom: 2px solid;
+            border-bottom: 2px solid var(--border);
         }
 
         .pontos {
@@ -353,7 +372,7 @@
                     margin-bottom: 2rem;
 
                     input[type="text"] {
-                        border-bottom: 1px dotted;
+                        border-bottom: 1px dotted var(--border);
                         flex-grow: 1;
                         padding-left: 5px;
                         font-family: 'Lexend Peta', sans-serif;
@@ -481,8 +500,8 @@
             width: 33%;
             display: flex;
             flex-direction: column;
-            border-top: 1px solid;
-            border-right: 1px solid;
+            border-top: 1px solid var(--border);
+            border-right: 1px solid var(--border);
 
 
 
@@ -492,15 +511,15 @@
                 font-size: 15px;
                 font-family: 'Lexend Peta', sans-serif;
                 overflow-x: hidden;
-                border-bottom: 1px solid;
+                border-bottom: 1px solid var(--border);
             }
 
             &:nth-child(2) {
-                border-left: 1px solid;
+                border-left: 1px solid var(--border);
             }
 
             &:nth-child(5) {
-                border-left: 1px solid;
+                border-left: 1px solid var(--border);
             }
 
             &:nth-child(-n+7) {
@@ -508,7 +527,7 @@
             }
 
             &:nth-child(-n+4) {
-                border-top: 1px solid;
+                border-top: 1px solid var(--border);
             }
 
 
@@ -527,7 +546,7 @@
                 .qtd-pontos {
                     display: flex;
                     align-items: center;
-                    border-bottom: 1px solid;
+                    border-bottom: 1px solid var(--border);
                 }
             }
 
@@ -622,7 +641,7 @@
             white-space: nowrap;
 
             input {
-                border-bottom: 1px dotted;
+                border-bottom: 1px dotted var(--border);
                 flex-grow: 1;
                 padding-left: 5px;
                 font-family: 'Lexend Peta', sans-serif;
@@ -778,7 +797,7 @@
                     border-top: none;
                 }
 
-                border: 1px solid;
+                border: 1px solid var(--border);
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
@@ -830,7 +849,7 @@
                 td {
                     width: 18.5rem;
                     height: 5rem;
-                    border: 1px solid;
+                    border: 1px solid var(--border);
 
                     span {
                         display: block;
@@ -863,7 +882,7 @@
                     padding: 1rem;
                     font-size: 15px;
                     font-family: "Lexend Peta", sans-serif;
-                    border-bottom: 1px solid;
+                    border-bottom: 1px solid var(--border);
                 }
             }
         }
@@ -1069,4 +1088,13 @@
             }
         }
     }
+}
+
+.functions {
+    button {
+        border: 1px solid;
+    }
+
+    position: absolute;
+    bottom: 10px;
 }

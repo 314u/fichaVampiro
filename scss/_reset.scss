@@ -34,7 +34,7 @@ input[type="radio"] {
     height: 16px;
     padding: 1px;
     /* background-color only for content */
-    border: 1px solid #bbbbbb;
+    border: 1px solid var(--border);
     background-color: #e7e6e710;
     border-radius: 50%;
     flex-grow: 0;
