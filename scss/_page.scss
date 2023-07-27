@@ -60,6 +60,34 @@
     }
 }
 
+@include responsive (1000px) {
+    input[type="radio"] {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@include responsive (790px) {
+    input[type="radio"] {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@include responsive (550px) {
+    input[type="radio"] {
+        width: 7px;
+        height: 7px;
+    }
+}
+
+@include responsive (350px) {
+    input[type="radio"] {
+        width: 6px;
+        height: 6px;
+    }
+}
+
 .info-personagem {
     .container {
 
@@ -253,14 +281,6 @@
                 font-size: 1.1rem;
             }
 
-            .desc {
-                .qnt-pontos {
-                    input[type="radio"] {
-                        width: 1rem;
-                    }
-                }
-            }
-
             .corpo-e-mente {
 
                 .vitalidade,
@@ -277,14 +297,6 @@
             i {
                 font-size: 1.0rem;
             }
-
-            .desc {
-                .qnt-pontos {
-                    input[type="radio"] {
-                        width: .9rem;
-                    }
-                }
-            }
         }
 
         @include responsive(380px) {
@@ -292,10 +304,6 @@
             .desc {
                 .qnt-pontos {
                     display: flex;
-
-                    input[type="radio"] {
-                        width: .9rem;
-                    }
                 }
             }
         }
@@ -307,16 +315,6 @@
                         span {
                             font-size: .8rem;
                         }
-                    }
-                }
-            }
-
-            .desc {
-                .qnt-pontos {
-                    display: flex;
-
-                    input[type="radio"] {
-                        width: .8rem;
                     }
                 }
             }
@@ -354,7 +352,7 @@
                     align-items: center;
                     margin-bottom: 2rem;
 
-                    input {
+                    input[type="text"] {
                         border-bottom: 1px dotted;
                         flex-grow: 1;
                         padding-left: 5px;
@@ -389,10 +387,6 @@
                             font-size: 0.8rem;
                         }
 
-                        input[type="radio"] {
-                            width: 1rem;
-                        }
-
                         .qnt-pontos {
                             display: flex;
                             gap: 1px;
@@ -418,10 +412,6 @@
                             font-size: 0.7rem;
                         }
 
-                        input[type="radio"] {
-                            width: .7rem;
-                        }
-
                         .qnt-pontos {
                             display: flex;
                             gap: 1px;
@@ -445,10 +435,6 @@
                             font-size: 0.6rem;
                         }
 
-                        input[type="radio"] {
-                            width: .6rem;
-                        }
-
                         .qnt-pontos {
                             gap: 0px;
                         }
@@ -469,10 +455,6 @@
 
                         input {
                             font-size: 0.5rem;
-                        }
-
-                        input[type="radio"] {
-                            width: .5rem;
                         }
                     }
                 }
@@ -495,10 +477,6 @@
         justify-content: center;
         flex-wrap: wrap;
 
-        input {
-            border-bottom: 1px solid;
-        }
-
         .disciplina {
             width: 33%;
             display: flex;
@@ -514,6 +492,7 @@
                 font-size: 15px;
                 font-family: 'Lexend Peta', sans-serif;
                 overflow-x: hidden;
+                border-bottom: 1px solid;
             }
 
             &:nth-child(2) {
@@ -537,21 +516,17 @@
             .nome {
                 display: flex;
 
-                input {
-                    flex-grow: 1;
-                }
-
                 input[type="text"] {
                     padding: 1rem;
                     font-weight: 700;
                     font-size: 15px;
                     font-family: 'Lexend Peta', sans-serif;
+                    flex-grow: 1;
                 }
 
                 .qtd-pontos {
                     display: flex;
                     align-items: center;
-                    width: 85px;
                     border-bottom: 1px solid;
                 }
             }
@@ -569,15 +544,6 @@
                     input[type="text"] {
                         font-size: .8rem;
                         padding: .5rem;
-                    }
-
-                    .qtd-pontos {
-                        width: auto;
-
-                        input[type="radio"] {
-                            width: 1rem;
-
-                        }
                     }
                 }
             }
@@ -600,15 +566,6 @@
                         font-size: .6rem;
                         padding: .3rem;
                     }
-
-                    .qtd-pontos {
-                        width: auto;
-
-                        input[type="radio"] {
-                            width: .7rem;
-
-                        }
-                    }
                 }
             }
 
@@ -627,39 +584,21 @@
                         font-size: .5rem;
                         padding: .2rem;
                     }
-
-                    .qtd-pontos {
-                        width: auto;
-
-                        input[type="radio"] {
-                            width: .6rem;
-
-                        }
-                    }
                 }
             }
-        }
 
-        @include responsive(350px) {
+            @include responsive(350px) {
 
-            .disciplina {
-                input[type="text"] {
-                    font-size: .5rem;
-                    padding: .2rem;
-                }
-
-                .nome {
+                .disciplina {
                     input[type="text"] {
-                        font-size: .45rem;
-                        padding: .1rem;
+                        font-size: .5rem;
+                        padding: .2rem;
                     }
 
-                    .qtd-pontos {
-                        width: auto;
-
-                        input[type="radio"] {
-                            width: .6rem;
-
+                    .nome {
+                        input[type="text"] {
+                            font-size: .45rem;
+                            padding: .1rem;
                         }
                     }
                 }
@@ -842,8 +781,9 @@
                 border: 1px solid;
                 display: flex;
                 justify-content: space-around;
+                align-items: center;
 
-                input {
+                input[type="text"] {
                     flex-grow: 1;
                     height: 30px;
                     padding: 1rem;
@@ -854,7 +794,6 @@
 
                 .qtd-pontos {
                     margin-right: 2px;
-                    width: 8rem;
                     white-space: nowrap;
                     display: flex;
                 }
@@ -870,7 +809,6 @@
 
             .potencia {
                 display: flex;
-                justify-content: center;
                 gap: 1rem;
 
                 span {
@@ -879,9 +817,9 @@
                 }
 
                 .qtd-pontos {
+                    display: flex;
+                    gap: 1px;
                     margin-right: 2px;
-                    width: 8rem;
-                    white-space: nowrap;
                 }
             }
 
@@ -952,14 +890,6 @@
             .potencia-xp {
                 margin-left: 0;
 
-                .potencia {
-                    .qtd-pontos {
-                        input {
-                            width: 1rem;
-                        }
-                    }
-                }
-
                 .xp {
                     input {
                         width: 18rem;
@@ -989,24 +919,10 @@
                         padding: .5rem;
                     }
 
-                    .qtd-pontos {
-                        width: auto;
-
-                        input[type="radio"] {
-                            width: 1rem;
-                        }
-                    }
                 }
             }
 
             .potencia-xp {
-                .potencia {
-                    .qtd-pontos {
-                        input {
-                            width: 1rem;
-                        }
-                    }
-                }
 
                 .xp {
                     input {
@@ -1036,26 +952,10 @@
                         font-size: .6rem;
                         padding: .1rem;
                     }
-
-                    .qtd-pontos {
-                        input[type="radio"] {
-                            width: .7rem;
-                        }
-                    }
                 }
             }
 
             .potencia-xp {
-                .potencia {
-                    .qtd-pontos {
-                        white-space: normal;
-                        width: 125px;
-
-                        input {
-                            width: 1rem;
-                        }
-                    }
-                }
 
                 .xp {
                     input {
@@ -1087,12 +987,6 @@
                         font-size: .6rem;
                         padding: .1rem;
                     }
-
-                    .qtd-pontos {
-                        input[type="radio"] {
-                            width: .7rem;
-                        }
-                    }
                 }
             }
 
@@ -1100,15 +994,6 @@
                 .potencia {
                     span {
                         font-size: 1rem;
-                    }
-
-                    .qtd-pontos {
-                        white-space: normal;
-                        width: 125px;
-
-                        input {
-                            width: 1rem;
-                        }
                     }
                 }
 
@@ -1146,12 +1031,6 @@
                         font-size: .5rem;
                         padding: .05rem;
                     }
-
-                    .qtd-pontos {
-                        input[type="radio"] {
-                            width: .5rem;
-                        }
-                    }
                 }
             }
 
@@ -1162,15 +1041,6 @@
                     span {
                         white-space: nowrap;
                         font-size: 1rem;
-                    }
-
-                    .qtd-pontos {
-                        white-space: normal;
-                        width: 125px;
-
-                        input {
-                            width: .8rem;
-                        }
                     }
                 }
 
