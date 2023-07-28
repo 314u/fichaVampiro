@@ -30,6 +30,11 @@
     }
 
     .functions {
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+
         display: flex;
         margin-top: 40px;
         margin-bottom: 40px;
@@ -99,6 +104,14 @@
                     transform: scale(1);
                 }
             }
+        }
+
+        .salvar {
+            button {
+                background-color: var(--inputradiocheckedbg);
+                color: var(--bgcolor);
+            }
+
         }
     }
 }

@@ -26,22 +26,23 @@ function alterarHumanidade(componente) {
     estadoImg.alt = (indiceEstado + 1);
 }
 
-// Trocar tema
+// Ao iniciar verificar o tema
 var tema = localStorage.getItem("tema");
 if (tema === "dark") {
     document.body.classList.add(tema);
     var checkboxtema = document.getElementById('chk');
     checkboxtema.checked = true;
 }
-
+//Ao clicar na troca de tema, trocar o tema e salvar no local storage
 const chk = document.getElementById('chk')
 chk.addEventListener('change', () => {
-    if (tema === "ligth") {
-        console.log("claro");
+    var checkboxtema = document.getElementById('chk');
+    if (checkboxtema.checked === true) {
+        console.log("dark");
         localStorage.setItem("tema", "dark");
     }
     else {
-        console.log("escuro");
+        console.log("ligth");
         localStorage.setItem("tema", "ligth");
     }
     document.body.classList.toggle('dark');
@@ -53,6 +54,8 @@ function radiobutton(componente) {
         console.log("marcado");
         componente.checked = false;
         componente.value = "0";
+        console.log(componente);
+
     }
     else {
         console.log(" não marcado");
@@ -60,3 +63,29 @@ function radiobutton(componente) {
         componente.value = "1";
     }
 }
+
+function save() {
+    // Get all checkbox inputs
+    var inputs = document.querySelectorAll('input[type="radio"]');
+    var arrData = [];
+    // For each inputs...
+    inputs.forEach(function (input) {
+        // ... save what you want (but 'ID' and 'checked' values are necessary)
+        arrData.push({ id: input.id, checked: input.checked });
+    });
+    // Save in localStorage
+    localStorage.setItem('inputs', JSON.stringify(arrData));
+
+    console.log(JSON.stringify(arrData));
+}
+
+function load() {
+    var inputs = JSON.parse(localStorage.getItem('inputs'));
+    // For each inputs...
+    inputs.forEach(function (input) {
+        // Set the 'checked' value
+        document.getElementById(input.id).checked = input.checked;
+    });
+}
+
+load();
