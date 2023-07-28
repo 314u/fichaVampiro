@@ -2,12 +2,14 @@ body {
     --bgcolor: white;
     --txtcolor: black;
     --border: black;
+    --inputradiocheckedbg: black;
 }
 
 .dark {
     --bgcolor: black;
     --txtcolor: white;
     --border: white;
+    --inputradiocheckedbg: white;
 
     img {
         filter: invert(100%);
