@@ -1,5 +1,6 @@
 body {
     background-color: var(--bgcolor);
+    transition: all .2s linear;
 
     input[type="text"] {
         background: var(--bgcolor);
@@ -50,6 +51,7 @@ body {
     position: absolute;
     width: 100%;
     max-width: 1200px;
+    top: 0;
     left: 50%;
     margin-left: -600px;
     margin-top: 18rem;
@@ -1088,13 +1090,4 @@ body {
             }
         }
     }
-}
-
-.functions {
-    button {
-        border: 1px solid;
-    }
-
-    position: absolute;
-    bottom: 10px;
 }

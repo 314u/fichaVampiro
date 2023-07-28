@@ -8,4 +8,8 @@ body {
     --bgcolor: black;
     --txtcolor: white;
     --border: white;
+
+    img {
+        filter: invert(100%);
+    }
 }

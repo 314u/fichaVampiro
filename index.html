@@ -31,9 +31,23 @@
         <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@200&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/main.min.css">
     </head>
-    <img src="img/borda.png" class="borda" alt="">
 
     <body>
+        <div class="bg">
+            <img src="img/borda.png" class="borda" alt="">
+            <div class="functions">
+                <div class="container">
+                    <div class="trocarTema">
+                        <input type="checkbox" class="checkbox" id="chk" />
+                        <label class="label" for="chk">
+                            <i class="fas fa-sun"></i>
+                            <i class="fas fa-moon"></i>
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="content">
             <div class="info-personagem">
                 <div class="container">
@@ -1002,11 +1016,10 @@
                 </div>
             </div>
         </div>
-        <div class="functions">
-            <button id="trocarTema" onclick="trocarTema(this)" alt="ligth">Trocar Tema</button>
-        </div>
     </body>
 
     <script src="js/script.js"></script>
+
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
 
 </html>
