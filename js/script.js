@@ -27,10 +27,26 @@ function alterarHumanidade(componente) {
 }
 
 // Trocar tema
+var tema = localStorage.getItem("tema");
+if (tema === "dark") {
+    document.body.classList.add(tema);
+    var checkboxtema = document.getElementById('chk');
+    checkboxtema.checked = true;
+}
+
 const chk = document.getElementById('chk')
 chk.addEventListener('change', () => {
-    document.body.classList.toggle('dark')
+    if (tema === "ligth") {
+        console.log("claro");
+        localStorage.setItem("tema", "dark");
+    }
+    else {
+        console.log("escuro");
+        localStorage.setItem("tema", "ligth");
+    }
+    document.body.classList.toggle('dark');
 })
+
 // Permitir desmarcar o RadioButton
 function radiobutton(componente) {
     if (componente.value == "1") {
