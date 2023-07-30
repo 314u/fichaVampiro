@@ -67,11 +67,19 @@ function radiobutton(componente) {
 function save() {
     // Get all checkbox inputs
     var inputs = document.querySelectorAll('input[type="radio"]');
+    var inputstxt = document.querySelectorAll('input[type="text"]');
+    var vvfh = document.querySelectorAll(".estado");
     var arrData = [];
     // For each inputs...
     inputs.forEach(function (input) {
         // ... save what you want (but 'ID' and 'checked' values are necessary)
         arrData.push({ id: input.id, checked: input.checked });
+    });
+    inputstxt.forEach(function (inputtxt) {
+        arrData.push({ id: inputtxt.id, value: inputtxt.value });
+    });
+    vvfh.forEach(function (vvfh) {
+        arrData.push({ id: vvfh.id, src: vvfh.src, alt: vvfh.alt });
     });
     // Save in localStorage
     localStorage.setItem('inputs', JSON.stringify(arrData));
@@ -84,7 +92,21 @@ function load() {
     // For each inputs...
     inputs.forEach(function (input) {
         // Set the 'checked' value
-        document.getElementById(input.id).checked = input.checked;
+        if (input.hasOwnProperty('checked')) {
+            document.getElementById(input.id).checked = input.checked;
+        }
+        if (input.hasOwnProperty('value')) {
+            document.getElementById(input.id).value = input.value;
+        }
+        if (input.hasOwnProperty('src')) {
+            document.getElementById(input.id).src = input.src;
+
+        }
+        if (input.hasOwnProperty('alt')) {
+            document.getElementById(input.id).alt = input.alt;
+        }
+        console.log(input.id, input.src, input.alt);
+
     });
 }
 

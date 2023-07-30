@@ -1,0 +1,1861 @@
+[
+    {
+        "id": "rd1",
+        "checked": true
+    },
+    {
+        "id": "rd2",
+        "checked": false
+    },
+    {
+        "id": "rd3",
+        "checked": false
+    },
+    {
+        "id": "rd4",
+        "checked": false
+    },
+    {
+        "id": "rd5",
+        "checked": false
+    },
+    {
+        "id": "rd6",
+        "checked": true
+    },
+    {
+        "id": "rd7",
+        "checked": true
+    },
+    {
+        "id": "rd8",
+        "checked": true
+    },
+    {
+        "id": "rd9",
+        "checked": true
+    },
+    {
+        "id": "rd10",
+        "checked": false
+    },
+    {
+        "id": "rd11",
+        "checked": true
+    },
+    {
+        "id": "rd12",
+        "checked": true
+    },
+    {
+        "id": "rd13",
+        "checked": true
+    },
+    {
+        "id": "rd14",
+        "checked": false
+    },
+    {
+        "id": "rd15",
+        "checked": false
+    },
+    {
+        "id": "rd16",
+        "checked": true
+    },
+    {
+        "id": "rd17",
+        "checked": true
+    },
+    {
+        "id": "rd18",
+        "checked": false
+    },
+    {
+        "id": "rd19",
+        "checked": false
+    },
+    {
+        "id": "rd20",
+        "checked": false
+    },
+    {
+        "id": "rd21",
+        "checked": true
+    },
+    {
+        "id": "rd22",
+        "checked": true
+    },
+    {
+        "id": "rd23",
+        "checked": true
+    },
+    {
+        "id": "rd24",
+        "checked": false
+    },
+    {
+        "id": "rd25",
+        "checked": false
+    },
+    {
+        "id": "rd26",
+        "checked": true
+    },
+    {
+        "id": "rd27",
+        "checked": true
+    },
+    {
+        "id": "rd28",
+        "checked": false
+    },
+    {
+        "id": "rd29",
+        "checked": false
+    },
+    {
+        "id": "rd30",
+        "checked": false
+    },
+    {
+        "id": "rd31",
+        "checked": true
+    },
+    {
+        "id": "rd32",
+        "checked": true
+    },
+    {
+        "id": "rd33",
+        "checked": true
+    },
+    {
+        "id": "rd34",
+        "checked": false
+    },
+    {
+        "id": "rd35",
+        "checked": false
+    },
+    {
+        "id": "rd36",
+        "checked": true
+    },
+    {
+        "id": "rd37",
+        "checked": true
+    },
+    {
+        "id": "rd38",
+        "checked": false
+    },
+    {
+        "id": "rd39",
+        "checked": false
+    },
+    {
+        "id": "rd40",
+        "checked": false
+    },
+    {
+        "id": "rd41",
+        "checked": true
+    },
+    {
+        "id": "rd42",
+        "checked": true
+    },
+    {
+        "id": "rd43",
+        "checked": false
+    },
+    {
+        "id": "rd44",
+        "checked": false
+    },
+    {
+        "id": "rd45",
+        "checked": false
+    },
+    {
+        "id": "rd46",
+        "checked": true
+    },
+    {
+        "id": "rd47",
+        "checked": true
+    },
+    {
+        "id": "rd48",
+        "checked": false
+    },
+    {
+        "id": "rd49",
+        "checked": false
+    },
+    {
+        "id": "rd50",
+        "checked": false
+    },
+    {
+        "id": "rd51",
+        "checked": true
+    },
+    {
+        "id": "rd52",
+        "checked": false
+    },
+    {
+        "id": "rd53",
+        "checked": false
+    },
+    {
+        "id": "rd54",
+        "checked": false
+    },
+    {
+        "id": "rd55",
+        "checked": false
+    },
+    {
+        "id": "rd56",
+        "checked": true
+    },
+    {
+        "id": "rd57",
+        "checked": false
+    },
+    {
+        "id": "rd58",
+        "checked": false
+    },
+    {
+        "id": "rd59",
+        "checked": false
+    },
+    {
+        "id": "rd60",
+        "checked": false
+    },
+    {
+        "id": "rd61",
+        "checked": false
+    },
+    {
+        "id": "rd62",
+        "checked": false
+    },
+    {
+        "id": "rd63",
+        "checked": false
+    },
+    {
+        "id": "rd64",
+        "checked": false
+    },
+    {
+        "id": "rd65",
+        "checked": false
+    },
+    {
+        "id": "rd66",
+        "checked": true
+    },
+    {
+        "id": "rd67",
+        "checked": false
+    },
+    {
+        "id": "rd68",
+        "checked": false
+    },
+    {
+        "id": "rd69",
+        "checked": false
+    },
+    {
+        "id": "rd70",
+        "checked": false
+    },
+    {
+        "id": "rd71",
+        "checked": true
+    },
+    {
+        "id": "rd72",
+        "checked": true
+    },
+    {
+        "id": "rd73",
+        "checked": true
+    },
+    {
+        "id": "rd74",
+        "checked": false
+    },
+    {
+        "id": "rd75",
+        "checked": false
+    },
+    {
+        "id": "rd76",
+        "checked": true
+    },
+    {
+        "id": "rd77",
+        "checked": true
+    },
+    {
+        "id": "rd78",
+        "checked": true
+    },
+    {
+        "id": "rd79",
+        "checked": false
+    },
+    {
+        "id": "rd80",
+        "checked": false
+    },
+    {
+        "id": "rd346",
+        "checked": false
+    },
+    {
+        "id": "rd347",
+        "checked": false
+    },
+    {
+        "id": "rd348",
+        "checked": false
+    },
+    {
+        "id": "rd349",
+        "checked": false
+    },
+    {
+        "id": "rd350",
+        "checked": false
+    },
+    {
+        "id": "rd81",
+        "checked": false
+    },
+    {
+        "id": "rd82",
+        "checked": false
+    },
+    {
+        "id": "rd83",
+        "checked": false
+    },
+    {
+        "id": "rd84",
+        "checked": false
+    },
+    {
+        "id": "rd85",
+        "checked": false
+    },
+    {
+        "id": "rd86",
+        "checked": false
+    },
+    {
+        "id": "rd87",
+        "checked": false
+    },
+    {
+        "id": "rd88",
+        "checked": false
+    },
+    {
+        "id": "rd89",
+        "checked": false
+    },
+    {
+        "id": "rd90",
+        "checked": false
+    },
+    {
+        "id": "rd91",
+        "checked": false
+    },
+    {
+        "id": "rd92",
+        "checked": false
+    },
+    {
+        "id": "rd93",
+        "checked": false
+    },
+    {
+        "id": "rd94",
+        "checked": false
+    },
+    {
+        "id": "rd95",
+        "checked": false
+    },
+    {
+        "id": "rd96",
+        "checked": false
+    },
+    {
+        "id": "rd97",
+        "checked": false
+    },
+    {
+        "id": "rd98",
+        "checked": false
+    },
+    {
+        "id": "rd99",
+        "checked": false
+    },
+    {
+        "id": "rd100",
+        "checked": false
+    },
+    {
+        "id": "rd101",
+        "checked": false
+    },
+    {
+        "id": "rd102",
+        "checked": false
+    },
+    {
+        "id": "rd103",
+        "checked": false
+    },
+    {
+        "id": "rd104",
+        "checked": false
+    },
+    {
+        "id": "rd105",
+        "checked": false
+    },
+    {
+        "id": "rd106",
+        "checked": true
+    },
+    {
+        "id": "rd107",
+        "checked": true
+    },
+    {
+        "id": "rd108",
+        "checked": true
+    },
+    {
+        "id": "rd109",
+        "checked": false
+    },
+    {
+        "id": "rd110",
+        "checked": false
+    },
+    {
+        "id": "rd111",
+        "checked": false
+    },
+    {
+        "id": "rd112",
+        "checked": false
+    },
+    {
+        "id": "rd113",
+        "checked": false
+    },
+    {
+        "id": "rd114",
+        "checked": false
+    },
+    {
+        "id": "rd115",
+        "checked": false
+    },
+    {
+        "id": "rd116",
+        "checked": true
+    },
+    {
+        "id": "rd117",
+        "checked": false
+    },
+    {
+        "id": "rd118",
+        "checked": false
+    },
+    {
+        "id": "rd119",
+        "checked": false
+    },
+    {
+        "id": "rd120",
+        "checked": false
+    },
+    {
+        "id": "rd121",
+        "checked": true
+    },
+    {
+        "id": "rd122",
+        "checked": false
+    },
+    {
+        "id": "rd123",
+        "checked": false
+    },
+    {
+        "id": "rd124",
+        "checked": false
+    },
+    {
+        "id": "rd125",
+        "checked": false
+    },
+    {
+        "id": "rd126",
+        "checked": true
+    },
+    {
+        "id": "rd127",
+        "checked": true
+    },
+    {
+        "id": "rd128",
+        "checked": false
+    },
+    {
+        "id": "rd129",
+        "checked": false
+    },
+    {
+        "id": "rd130",
+        "checked": false
+    },
+    {
+        "id": "rd131",
+        "checked": false
+    },
+    {
+        "id": "rd132",
+        "checked": false
+    },
+    {
+        "id": "rd133",
+        "checked": false
+    },
+    {
+        "id": "rd134",
+        "checked": false
+    },
+    {
+        "id": "rd135",
+        "checked": false
+    },
+    {
+        "id": "rd136",
+        "checked": false
+    },
+    {
+        "id": "rd137",
+        "checked": false
+    },
+    {
+        "id": "rd138",
+        "checked": false
+    },
+    {
+        "id": "rd139",
+        "checked": false
+    },
+    {
+        "id": "rd140",
+        "checked": false
+    },
+    {
+        "id": "rd141",
+        "checked": true
+    },
+    {
+        "id": "rd142",
+        "checked": false
+    },
+    {
+        "id": "rd143",
+        "checked": false
+    },
+    {
+        "id": "rd144",
+        "checked": false
+    },
+    {
+        "id": "rd145",
+        "checked": false
+    },
+    {
+        "id": "rd146",
+        "checked": false
+    },
+    {
+        "id": "rd147",
+        "checked": false
+    },
+    {
+        "id": "rd148",
+        "checked": false
+    },
+    {
+        "id": "rd149",
+        "checked": false
+    },
+    {
+        "id": "rd150",
+        "checked": false
+    },
+    {
+        "id": "rd151",
+        "checked": true
+    },
+    {
+        "id": "rd152",
+        "checked": true
+    },
+    {
+        "id": "rd153",
+        "checked": false
+    },
+    {
+        "id": "rd154",
+        "checked": false
+    },
+    {
+        "id": "rd155",
+        "checked": false
+    },
+    {
+        "id": "rd156",
+        "checked": true
+    },
+    {
+        "id": "rd157",
+        "checked": true
+    },
+    {
+        "id": "rd158",
+        "checked": false
+    },
+    {
+        "id": "rd159",
+        "checked": false
+    },
+    {
+        "id": "rd160",
+        "checked": false
+    },
+    {
+        "id": "rd161",
+        "checked": true
+    },
+    {
+        "id": "rd162",
+        "checked": false
+    },
+    {
+        "id": "rd163",
+        "checked": false
+    },
+    {
+        "id": "rd164",
+        "checked": false
+    },
+    {
+        "id": "rd165",
+        "checked": false
+    },
+    {
+        "id": "rd166",
+        "checked": false
+    },
+    {
+        "id": "rd167",
+        "checked": false
+    },
+    {
+        "id": "rd168",
+        "checked": false
+    },
+    {
+        "id": "rd169",
+        "checked": false
+    },
+    {
+        "id": "rd170",
+        "checked": false
+    },
+    {
+        "id": "rd171",
+        "checked": true
+    },
+    {
+        "id": "rd172",
+        "checked": true
+    },
+    {
+        "id": "rd173",
+        "checked": false
+    },
+    {
+        "id": "rd174",
+        "checked": false
+    },
+    {
+        "id": "rd175",
+        "checked": false
+    },
+    {
+        "id": "rd176",
+        "checked": true
+    },
+    {
+        "id": "rd177",
+        "checked": true
+    },
+    {
+        "id": "rd178",
+        "checked": true
+    },
+    {
+        "id": "rd179",
+        "checked": false
+    },
+    {
+        "id": "rd180",
+        "checked": false
+    },
+    {
+        "id": "rd181",
+        "checked": false
+    },
+    {
+        "id": "rd182",
+        "checked": false
+    },
+    {
+        "id": "rd183",
+        "checked": false
+    },
+    {
+        "id": "rd184",
+        "checked": false
+    },
+    {
+        "id": "rd185",
+        "checked": false
+    },
+    {
+        "id": "rd186",
+        "checked": false
+    },
+    {
+        "id": "rd187",
+        "checked": false
+    },
+    {
+        "id": "rd188",
+        "checked": false
+    },
+    {
+        "id": "rd189",
+        "checked": false
+    },
+    {
+        "id": "rd190",
+        "checked": false
+    },
+    {
+        "id": "rd191",
+        "checked": false
+    },
+    {
+        "id": "rd192",
+        "checked": false
+    },
+    {
+        "id": "rd193",
+        "checked": false
+    },
+    {
+        "id": "rd194",
+        "checked": false
+    },
+    {
+        "id": "rd195",
+        "checked": false
+    },
+    {
+        "id": "rd196",
+        "checked": false
+    },
+    {
+        "id": "rd197",
+        "checked": false
+    },
+    {
+        "id": "rd198",
+        "checked": false
+    },
+    {
+        "id": "rd199",
+        "checked": false
+    },
+    {
+        "id": "rd200",
+        "checked": false
+    },
+    {
+        "id": "rd201",
+        "checked": false
+    },
+    {
+        "id": "rd202",
+        "checked": false
+    },
+    {
+        "id": "rd203",
+        "checked": false
+    },
+    {
+        "id": "rd204",
+        "checked": false
+    },
+    {
+        "id": "rd205",
+        "checked": false
+    },
+    {
+        "id": "rd206",
+        "checked": true
+    },
+    {
+        "id": "rd207",
+        "checked": true
+    },
+    {
+        "id": "rd208",
+        "checked": false
+    },
+    {
+        "id": "rd209",
+        "checked": false
+    },
+    {
+        "id": "rd230",
+        "checked": false
+    },
+    {
+        "id": "rd231",
+        "checked": true
+    },
+    {
+        "id": "rd232",
+        "checked": true
+    },
+    {
+        "id": "rd233",
+        "checked": false
+    },
+    {
+        "id": "rd234",
+        "checked": false
+    },
+    {
+        "id": "rd235",
+        "checked": false
+    },
+    {
+        "id": "rd236",
+        "checked": true
+    },
+    {
+        "id": "rd237",
+        "checked": true
+    },
+    {
+        "id": "rd238",
+        "checked": false
+    },
+    {
+        "id": "rd239",
+        "checked": false
+    },
+    {
+        "id": "rd240",
+        "checked": false
+    },
+    {
+        "id": "rd241",
+        "checked": true
+    },
+    {
+        "id": "rd242",
+        "checked": true
+    },
+    {
+        "id": "rd243",
+        "checked": true
+    },
+    {
+        "id": "rd244",
+        "checked": true
+    },
+    {
+        "id": "rd245",
+        "checked": true
+    },
+    {
+        "id": "rd246",
+        "checked": true
+    },
+    {
+        "id": "rd247",
+        "checked": true
+    },
+    {
+        "id": "rd248",
+        "checked": true
+    },
+    {
+        "id": "rd249",
+        "checked": false
+    },
+    {
+        "id": "rd250",
+        "checked": false
+    },
+    {
+        "id": "rd251",
+        "checked": true
+    },
+    {
+        "id": "rd252",
+        "checked": true
+    },
+    {
+        "id": "rd253",
+        "checked": false
+    },
+    {
+        "id": "rd254",
+        "checked": false
+    },
+    {
+        "id": "rd255",
+        "checked": false
+    },
+    {
+        "id": "rd256",
+        "checked": false
+    },
+    {
+        "id": "rd257",
+        "checked": false
+    },
+    {
+        "id": "rd258",
+        "checked": false
+    },
+    {
+        "id": "rd259",
+        "checked": false
+    },
+    {
+        "id": "rd260",
+        "checked": false
+    },
+    {
+        "id": "rd261",
+        "checked": false
+    },
+    {
+        "id": "rd262",
+        "checked": false
+    },
+    {
+        "id": "rd263",
+        "checked": false
+    },
+    {
+        "id": "rd264",
+        "checked": false
+    },
+    {
+        "id": "rd265",
+        "checked": false
+    },
+    {
+        "id": "rd266",
+        "checked": false
+    },
+    {
+        "id": "rd267",
+        "checked": false
+    },
+    {
+        "id": "rd268",
+        "checked": false
+    },
+    {
+        "id": "rd269",
+        "checked": false
+    },
+    {
+        "id": "rd270",
+        "checked": false
+    },
+    {
+        "id": "rd271",
+        "checked": false
+    },
+    {
+        "id": "rd272",
+        "checked": false
+    },
+    {
+        "id": "rd273",
+        "checked": false
+    },
+    {
+        "id": "rd274",
+        "checked": false
+    },
+    {
+        "id": "rd275",
+        "checked": false
+    },
+    {
+        "id": "rd276",
+        "checked": true
+    },
+    {
+        "id": "rd277",
+        "checked": false
+    },
+    {
+        "id": "rd278",
+        "checked": false
+    },
+    {
+        "id": "rd279",
+        "checked": false
+    },
+    {
+        "id": "rd280",
+        "checked": false
+    },
+    {
+        "id": "rd281",
+        "checked": true
+    },
+    {
+        "id": "rd282",
+        "checked": false
+    },
+    {
+        "id": "rd283",
+        "checked": false
+    },
+    {
+        "id": "rd284",
+        "checked": false
+    },
+    {
+        "id": "rd285",
+        "checked": false
+    },
+    {
+        "id": "rd286",
+        "checked": true
+    },
+    {
+        "id": "rd287",
+        "checked": true
+    },
+    {
+        "id": "rd288",
+        "checked": false
+    },
+    {
+        "id": "rd289",
+        "checked": false
+    },
+    {
+        "id": "rd300",
+        "checked": false
+    },
+    {
+        "id": "rd301",
+        "checked": false
+    },
+    {
+        "id": "rd302",
+        "checked": false
+    },
+    {
+        "id": "rd303",
+        "checked": false
+    },
+    {
+        "id": "rd304",
+        "checked": false
+    },
+    {
+        "id": "rd305",
+        "checked": false
+    },
+    {
+        "id": "rd306",
+        "checked": false
+    },
+    {
+        "id": "rd307",
+        "checked": false
+    },
+    {
+        "id": "rd308",
+        "checked": false
+    },
+    {
+        "id": "rd309",
+        "checked": false
+    },
+    {
+        "id": "rd310",
+        "checked": false
+    },
+    {
+        "id": "rd311",
+        "checked": false
+    },
+    {
+        "id": "rd312",
+        "checked": false
+    },
+    {
+        "id": "rd313",
+        "checked": false
+    },
+    {
+        "id": "rd314",
+        "checked": false
+    },
+    {
+        "id": "rd315",
+        "checked": false
+    },
+    {
+        "id": "rd316",
+        "checked": false
+    },
+    {
+        "id": "rd317",
+        "checked": false
+    },
+    {
+        "id": "rd318",
+        "checked": false
+    },
+    {
+        "id": "rd319",
+        "checked": false
+    },
+    {
+        "id": "rd320",
+        "checked": false
+    },
+    {
+        "id": "rd321",
+        "checked": false
+    },
+    {
+        "id": "rd322",
+        "checked": false
+    },
+    {
+        "id": "rd323",
+        "checked": false
+    },
+    {
+        "id": "rd324",
+        "checked": false
+    },
+    {
+        "id": "rd325",
+        "checked": false
+    },
+    {
+        "id": "rd326",
+        "checked": false
+    },
+    {
+        "id": "rd327",
+        "checked": false
+    },
+    {
+        "id": "rd328",
+        "checked": false
+    },
+    {
+        "id": "rd329",
+        "checked": false
+    },
+    {
+        "id": "rd330",
+        "checked": false
+    },
+    {
+        "id": "rd331",
+        "checked": false
+    },
+    {
+        "id": "rd332",
+        "checked": false
+    },
+    {
+        "id": "rd333",
+        "checked": false
+    },
+    {
+        "id": "rd334",
+        "checked": false
+    },
+    {
+        "id": "rd335",
+        "checked": false
+    },
+    {
+        "id": "rd336",
+        "checked": false
+    },
+    {
+        "id": "rd337",
+        "checked": false
+    },
+    {
+        "id": "rd338",
+        "checked": false
+    },
+    {
+        "id": "rd339",
+        "checked": false
+    },
+    {
+        "id": "rd340",
+        "checked": false
+    },
+    {
+        "id": "rd341",
+        "checked": false
+    },
+    {
+        "id": "rd342",
+        "checked": false
+    },
+    {
+        "id": "rd343",
+        "checked": false
+    },
+    {
+        "id": "rd344",
+        "checked": false
+    },
+    {
+        "id": "rd345",
+        "checked": false
+    },
+    {
+        "id": "nome",
+        "value": "Hugo Fritz"
+    },
+    {
+        "id": "conceito",
+        "value": "Ladrão"
+    },
+    {
+        "id": "predador",
+        "value": "Sacoleiro"
+    },
+    {
+        "id": "cronica",
+        "value": "Berlin b Nigth"
+    },
+    {
+        "id": "ambicao",
+        "value": "Reconhê-lo como Membro"
+    },
+    {
+        "id": "cla",
+        "value": ""
+    },
+    {
+        "id": "senhor",
+        "value": ""
+    },
+    {
+        "id": "desejo",
+        "value": "Matar seu Senhor"
+    },
+    {
+        "id": "geracao",
+        "value": "14"
+    },
+    {
+        "id": "armasbrancas",
+        "value": ""
+    },
+    {
+        "id": "armasdefogo",
+        "value": ""
+    },
+    {
+        "id": "atletismo",
+        "value": ""
+    },
+    {
+        "id": "briga",
+        "value": ""
+    },
+    {
+        "id": "conducao",
+        "value": ""
+    },
+    {
+        "id": "furtividade",
+        "value": ""
+    },
+    {
+        "id": "ladroagem",
+        "value": ""
+    },
+    {
+        "id": "oficios",
+        "value": ""
+    },
+    {
+        "id": "sobrevivencia",
+        "value": ""
+    },
+    {
+        "id": "empatiacomanimais",
+        "value": ""
+    },
+    {
+        "id": "etiqueta",
+        "value": ""
+    },
+    {
+        "id": "intimidacao",
+        "value": ""
+    },
+    {
+        "id": "lideranca",
+        "value": ""
+    },
+    {
+        "id": "manha",
+        "value": "Black Market"
+    },
+    {
+        "id": "performance",
+        "value": ""
+    },
+    {
+        "id": "persuasao",
+        "value": ""
+    },
+    {
+        "id": "sagacidade",
+        "value": ""
+    },
+    {
+        "id": "subterfugio",
+        "value": ""
+    },
+    {
+        "id": "ciencia",
+        "value": ""
+    },
+    {
+        "id": "erudicao",
+        "value": ""
+    },
+    {
+        "id": "financas",
+        "value": ""
+    },
+    {
+        "id": "investigacao",
+        "value": ""
+    },
+    {
+        "id": "medicina",
+        "value": "Anestésicos"
+    },
+    {
+        "id": "ocultismo",
+        "value": ""
+    },
+    {
+        "id": "percepcao",
+        "value": ""
+    },
+    {
+        "id": "politica",
+        "value": ""
+    },
+    {
+        "id": "tecnologia",
+        "value": ""
+    },
+    {
+        "id": "nd1",
+        "value": "Alquimia Sangue-Ralo"
+    },
+    {
+        "id": "hd11",
+        "value": "Longo Alcance (FIX)"
+    },
+    {
+        "id": "hd12",
+        "value": ""
+    },
+    {
+        "id": "hd13",
+        "value": ""
+    },
+    {
+        "id": "hd14",
+        "value": ""
+    },
+    {
+        "id": "hd15",
+        "value": ""
+    },
+    {
+        "id": "nd2",
+        "value": "Ofuscação"
+    },
+    {
+        "id": "hd21",
+        "value": "Passagem Invisível (FIX)"
+    },
+    {
+        "id": "hd22",
+        "value": ""
+    },
+    {
+        "id": "hd23",
+        "value": ""
+    },
+    {
+        "id": "hd24",
+        "value": ""
+    },
+    {
+        "id": "hd25",
+        "value": ""
+    },
+    {
+        "id": "nd3",
+        "value": "Auspícios"
+    },
+    {
+        "id": "hd31",
+        "value": "Sentidos Aguçados (FIX)"
+    },
+    {
+        "id": "hd32",
+        "value": ""
+    },
+    {
+        "id": "hd33",
+        "value": ""
+    },
+    {
+        "id": "hd34",
+        "value": ""
+    },
+    {
+        "id": "hd35",
+        "value": ""
+    },
+    {
+        "id": "nd4",
+        "value": ""
+    },
+    {
+        "id": "hd41",
+        "value": ""
+    },
+    {
+        "id": "hd42",
+        "value": ""
+    },
+    {
+        "id": "hd43",
+        "value": ""
+    },
+    {
+        "id": "hd44",
+        "value": ""
+    },
+    {
+        "id": "hd45",
+        "value": ""
+    },
+    {
+        "id": "nd5",
+        "value": ""
+    },
+    {
+        "id": "hd51",
+        "value": ""
+    },
+    {
+        "id": "hd52",
+        "value": ""
+    },
+    {
+        "id": "hd53",
+        "value": ""
+    },
+    {
+        "id": "hd54",
+        "value": ""
+    },
+    {
+        "id": "hd55",
+        "value": ""
+    },
+    {
+        "id": "nd6",
+        "value": ""
+    },
+    {
+        "id": "hd61",
+        "value": ""
+    },
+    {
+        "id": "hd62",
+        "value": ""
+    },
+    {
+        "id": "hd63",
+        "value": ""
+    },
+    {
+        "id": "hd64",
+        "value": ""
+    },
+    {
+        "id": "hd65",
+        "value": ""
+    },
+    {
+        "id": "ressonancia",
+        "value": ""
+    },
+    {
+        "id": "v1",
+        "value": "Esôfago de Ferro"
+    },
+    {
+        "id": "v2",
+        "value": "Refúgio"
+    },
+    {
+        "id": "v3",
+        "value": "-LAB"
+    },
+    {
+        "id": "v4",
+        "value": "A prova de Laço"
+    },
+    {
+        "id": "v5",
+        "value": "Recursos"
+    },
+    {
+        "id": "v6",
+        "value": "Sistema Circulatório"
+    },
+    {
+        "id": "v7",
+        "value": "Resiliência Vampírica (Sangue-ralo)"
+    },
+    {
+        "id": "v8",
+        "value": "Bebedor Diurno (Sangue-ralo)"
+    },
+    {
+        "id": "v9",
+        "value": "Alquimia Sangue-ralo (Sangue Ralo)"
+    },
+    {
+        "id": "v10",
+        "value": ""
+    },
+    {
+        "id": "d1",
+        "value": "Refúgio Assombrado"
+    },
+    {
+        "id": "d2",
+        "value": "Exclusão de Presa (Crianças)"
+    },
+    {
+        "id": "d3",
+        "value": "Inimigo"
+    },
+    {
+        "id": "d4",
+        "value": "Dente de Leite"
+    },
+    {
+        "id": "d5",
+        "value": "Maldição de Clã (Malkav)"
+    },
+    {
+        "id": "d6",
+        "value": "Dependência de Vitae"
+    },
+    {
+        "id": "d7",
+        "value": ""
+    },
+    {
+        "id": "d8",
+        "value": ""
+    },
+    {
+        "id": "d9",
+        "value": ""
+    },
+    {
+        "id": "d10",
+        "value": ""
+    },
+    {
+        "id": "ss",
+        "value": "1"
+    },
+    {
+        "id": "qr",
+        "value": "1"
+    },
+    {
+        "id": "bp",
+        "value": "0"
+    },
+    {
+        "id": "rs",
+        "value": "0"
+    },
+    {
+        "id": "pa",
+        "value": "0"
+    },
+    {
+        "id": "gp",
+        "value": "0"
+    },
+    {
+        "id": "et",
+        "value": "50"
+    },
+    {
+        "id": "eg",
+        "value": "28"
+    },
+    {
+        "id": "es1",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/1.png",
+        "alt": "1"
+    },
+    {
+        "id": "es2",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/1.png",
+        "alt": "1"
+    },
+    {
+        "id": "es3",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/1.png",
+        "alt": "1"
+    },
+    {
+        "id": "es4",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/1.png",
+        "alt": "1"
+    },
+    {
+        "id": "es5",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/1.png",
+        "alt": "1"
+    },
+    {
+        "id": "es6",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/1.png",
+        "alt": "1"
+    },
+    {
+        "id": "es7",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/4.png",
+        "alt": "4"
+    },
+    {
+        "id": "es8",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/4.png",
+        "alt": "4"
+    },
+    {
+        "id": "es9",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/4.png",
+        "alt": "4"
+    },
+    {
+        "id": "es10",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/4.png",
+        "alt": "4"
+    },
+    {
+        "id": "es11",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/1.png",
+        "alt": "1"
+    },
+    {
+        "id": "es12",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/1.png",
+        "alt": "1"
+    },
+    {
+        "id": "es13",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/1.png",
+        "alt": "1"
+    },
+    {
+        "id": "es14",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/1.png",
+        "alt": "1"
+    },
+    {
+        "id": "es15",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/4.png",
+        "alt": "4"
+    },
+    {
+        "id": "es16",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/4.png",
+        "alt": "4"
+    },
+    {
+        "id": "es17",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/4.png",
+        "alt": "4"
+    },
+    {
+        "id": "es18",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/4.png",
+        "alt": "4"
+    },
+    {
+        "id": "es19",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/4.png",
+        "alt": "4"
+    },
+    {
+        "id": "es20",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/4.png",
+        "alt": "4"
+    },
+    {
+        "id": "es21",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/4.png",
+        "alt": "2"
+    },
+    {
+        "id": "es22",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/1.png",
+        "alt": "1"
+    },
+    {
+        "id": "es23",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/1.png",
+        "alt": "1"
+    },
+    {
+        "id": "es24",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/1.png",
+        "alt": "1"
+    },
+    {
+        "id": "es25",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/1.png",
+        "alt": "1"
+    },
+    {
+        "id": "es26",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/4.png",
+        "alt": "3"
+    },
+    {
+        "id": "es27",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/4.png",
+        "alt": "3"
+    },
+    {
+        "id": "es28",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/4.png",
+        "alt": "3"
+    },
+    {
+        "id": "es29",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/4.png",
+        "alt": "3"
+    },
+    {
+        "id": "es30",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/4.png",
+        "alt": "3"
+    },
+    {
+        "id": "es31",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/4.png",
+        "alt": "3"
+    },
+    {
+        "id": "es32",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/4.png",
+        "alt": "3"
+    },
+    {
+        "id": "es33",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/1.png",
+        "alt": "1"
+    },
+    {
+        "id": "es34",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/1.png",
+        "alt": "1"
+    },
+    {
+        "id": "es35",
+        "src": "http://127.0.0.1:5500/img/trilhascheckbox/1.png",
+        "alt": "1"
+    }
+]
