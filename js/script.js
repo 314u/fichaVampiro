@@ -105,31 +105,6 @@ function download() {
     downloadLink.click();
     URL.revokeObjectURL(downloadLink.href);
 }
-
-document.getElementById("fileButton").addEventListener("click", function () {
-    document.getElementById("fileInput").click();
-});
-
-document.getElementById("fileInput").addEventListener("change", function (event) {
-    const file = event.target.files[0];
-
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = function (e) {
-            const content = e.target.result;
-            try {
-                const jsonData = JSON.parse(content);
-                // Salvar o JSON no localStorage
-                localStorage.setItem("inputs", JSON.stringify(jsonData));
-                load();
-            } catch (error) {
-                alert("Erro ao carregar o arquivo JSON. Verifique se é um arquivo válido.");
-            }
-            reader.readAsText(file);
-        };
-    }
-});
-
 function load() {
     // For each inputs...
     if (arrData) {
@@ -151,6 +126,33 @@ function load() {
         });
     }
 }
+
+document.getElementById("fileButton").addEventListener("click", function () {
+    document.getElementById("fileInput").click();
+});
+
+document.getElementById("fileInput").addEventListener("change", function (event) {
+    const file = event.target.files[0];
+
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            const content = e.target.result;
+            try {
+                const jsonData = JSON.parse(content);
+                // Salvar o JSON no localStorage
+                localStorage.setItem("inputs", JSON.stringify(jsonData));
+                alert("Ficha carregada");
+                location.reload();
+            } catch (error) {
+                alert("Erro ao carregar o arquivo JSON. Verifique se é um arquivo válido.");
+            }
+        };
+        reader.readAsText(file);
+    }
+});
+
+
 verificarLocalStorage();
 verificarTema();
 load();
