@@ -48,14 +48,19 @@ body {
 }
 
 .content {
-    overflow-y: auto;
+    overflow-y: hidden;
     position: absolute;
     width: 100%;
     max-width: 1200px;
+    height: 1571px;
     top: 0;
     left: 50%;
     margin-left: -600px;
     margin-top: 18rem;
+
+    &:hover {
+        overflow-y: auto;
+    }
 
     @include responsive(1220px) {
         height: 130rem;
@@ -525,7 +530,11 @@ body {
                 border-left: 1px solid var(--border);
             }
 
-            &:nth-child(-n+7) {
+            &:nth-child(8) {
+                border-left: 1px solid var(--border);
+            }
+
+            &:nth-child(-n+10) {
                 border-top: none;
             }
 
@@ -1089,6 +1098,27 @@ body {
                 }
 
             }
+        }
+    }
+}
+
+.anotacoes {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            font-size: 19px;
+        }
+
+        textarea {
+            color: var(--txtcolor);
+            appearance: none;
+            background-color: var(--bgcolor);
+            border: 1px solid var(--border);
+            font-size: 16px;
+            padding: 5px;
         }
     }
 }

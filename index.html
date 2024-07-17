@@ -1,1041 +1,1099 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="img/favicon.png">
-        <title>Vampiro a máscara</title>
-        <!-- Primary Meta Tags -->
-        <title>Vampiro a máscara</title>
-        <meta name="title" content="Vampiro a máscara" />
-        <meta name="description" content="Ficha online editável de vampiro a máscara V5" />
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://fichavampiro.netlify.app/" />
-        <meta property="og:title" content="Vampiro a máscara" />
-        <meta property="og:description" content="Ficha online editável de vampiro a máscara V5" />
-        <meta property="og:image" content="/img/metaimg.png" />
-        <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://fichavampiro.netlify.app/" />
-        <meta property="twitter:title" content="Vampiro a máscara" />
-        <meta property="twitter:description" content="Ficha online editável de vampiro a máscara V5" />
-        <meta property="twitter:image" content="/img/metaimg.png" />
-        <!-- Meta Tags Generated with https://metatags.io -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/main.min.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Vampiro a máscara</title>
+    <!-- Primary Meta Tags -->
+    <title>Vampiro a máscara</title>
+    <meta name="title" content="Vampiro a máscara" />
+    <meta name="description" content="Ficha online editável de vampiro a máscara V5" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fichavampiro.netlify.app/" />
+    <meta property="og:title" content="Vampiro a máscara" />
+    <meta property="og:description" content="Ficha online editável de vampiro a máscara V5" />
+    <meta property="og:image" content="/img/metaimg.png" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://fichavampiro.netlify.app/" />
+    <meta property="twitter:title" content="Vampiro a máscara" />
+    <meta property="twitter:description" content="Ficha online editável de vampiro a máscara V5" />
+    <meta property="twitter:image" content="/img/metaimg.png" />
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
 
-    <body>
-        <div class="bg">
-            <img src="img/borda.png" class="borda" alt="">
-            <div class="functions">
-                <div class="container">
-                    <div class="trocarTema">
-                        <input type="checkbox" class="checkbox" id="chk" />
-                        <label class="label" for="chk">
-                            <i class="fas fa-sun"></i>
-                            <i class="fas fa-moon"></i>
-                            <div class="ball"></div>
-                        </label>
-                    </div>
-                    <div class="salvar">
-                        <button id="fileButton">
-                            <img src="img/importar.png" alt="">
-                            <input type="file" id="fileInput" style="display: none;">
-                        </button>
-                    </div>
-                    <div class="salvar">
-                        <button onclick="download()">
-                            <img src="img/exportar.png" alt="Exportar Ficha">
-                        </button>
-                    </div>
-                    <div class="salvar">
-                        <button onclick="save()">
-                            <img src="img/salvar.jpeg" alt="">
-                        </button>
-                    </div>
+<body>
+    <div class="bg">
+        <img src="img/borda.png" class="borda" alt="">
+        <div class="functions">
+            <div class="container">
+                <div class="trocarTema">
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+                <div class="salvar">
+                    <button id="fileButton">
+                        <img src="img/importar.png" alt="Importar Ficha">
+                        <input type="file" id="fileInput" style="display: none;">
+                    </button>
+                    <label for="">Importar Ficha</label>
+                </div>
+                <div class="salvar">
+                    <button onclick="download()">
+                        <img src="img/exportar.png" alt="Exportar Ficha">
+                    </button>
+                    <label for="">Exportar Ficha</label>
+                </div>
+                <div class="salvar">
+                    <button onclick="save()">
+                        <img src="img/salvar.jpeg" alt="">
+                    </button>
                 </div>
             </div>
         </div>
-        <div class="content">
-            <div class="info-personagem">
-                <div class="container">
-                    <ul>
-                        <li>
-                            <label for="Nome">Nome</label>
-                            <input id="nome" type="text">
-                        </li>
-                        <li>
-                            <label for="Conceito">Conceito</label>
-                            <input id="conceito" type="text">
-                        </li>
-                        <li>
-                            <label for="Predador">Predador</label>
-                            <input id="predador" type="text">
-                        </li>
-                        <li>
-                            <label for="Crônica">Crônica</label>
-                            <input id="cronica" type="text">
-                        </li>
-                        <li>
-                            <label for="Ambição">Ambição</label>
-                            <input id="ambicao" type="text">
-                        </li>
-                        <li>
-                            <label for="Clã">Clã</label>
-                            <input id="cla" type="text">
-                        </li>
-                        <li>
-                            <label for="Senhor">Senhor</label>
-                            <input id="senhor" type="text">
-                        </li>
-                        <li>
-                            <label for="Desejo">Desejo</label>
-                            <input id="desejo" type="text">
-                        </li>
-                        <li>
-                            <label for="Geração">Geração</label>
-                            <input id="geracao" type="text">
-                        </li>
-                    </ul>
-                </div>
+    </div>
+    <div class="content">
+        <div class="info-personagem">
+            <div class="container">
+                <ul>
+                    <li>
+                        <label for="Nome">Nome</label>
+                        <input id="nome" type="text">
+                    </li>
+                    <li>
+                        <label for="Conceito">Conceito</label>
+                        <input id="conceito" type="text">
+                    </li>
+                    <li>
+                        <label for="Predador">Predador</label>
+                        <input id="predador" type="text">
+                    </li>
+                    <li>
+                        <label for="Crônica">Crônica</label>
+                        <input id="cronica" type="text">
+                    </li>
+                    <li>
+                        <label for="Ambição">Ambição</label>
+                        <input id="ambicao" type="text">
+                    </li>
+                    <li>
+                        <label for="Clã">Clã</label>
+                        <input id="cla" type="text">
+                    </li>
+                    <li>
+                        <label for="Senhor">Senhor</label>
+                        <input id="senhor" type="text">
+                    </li>
+                    <li>
+                        <label for="Desejo">Desejo</label>
+                        <input id="desejo" type="text">
+                    </li>
+                    <li>
+                        <label for="Geração">Geração</label>
+                        <input id="geracao" type="text">
+                    </li>
+                </ul>
             </div>
-            <div class="atributos">
-                <div class="container">
-                    <p><strong>ATRIBUTOS</strong></p>
-                    <div class="pontos">
-                        <div class="valores">
-                            <p><i>Físicos</i></p>
-                            <div class="desc sem-borda">
-                                <span>Força</span>
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd1" onclick="radiobutton(this)" value="0" name="">
-                                    <input type="radio" id="rd2" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd3" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd4" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd5" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc sem-borda">
-                                <span>Destreza</span>
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd6" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd7" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd8" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd9" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd10" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc sem-borda">
-                                <span>Vigor</span>
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd11" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd12" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd13" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd14" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd15" onclick="radiobutton(this)" value="0">
-                                </div>
+        </div>
+        <div class="atributos">
+            <div class="container">
+                <p><strong>ATRIBUTOS</strong></p>
+                <div class="pontos">
+                    <div class="valores">
+                        <p><i>Físicos</i></p>
+                        <div class="desc sem-borda">
+                            <span>Força</span>
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd1" onclick="radiobutton(this)" value="0" name="">
+                                <input type="radio" id="rd2" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd3" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd4" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd5" onclick="radiobutton(this)" value="0">
                             </div>
                         </div>
-                        <div class="valores">
-                            <p><i>Sociais</i></p>
-                            <div class="desc">
-                                <span>Carisma</span>
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd16" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd17" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd18" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd19" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd20" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Manipulação</span>
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd21" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd22" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd23" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd24" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd25" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Autocontrole</span>
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd26" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd27" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd28" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd29" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd30" onclick="radiobutton(this)" value="0">
-                                </div>
+                        <div class="desc sem-borda">
+                            <span>Destreza</span>
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd6" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd7" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd8" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd9" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd10" onclick="radiobutton(this)" value="0">
                             </div>
                         </div>
-                        <div class="valores">
-                            <p><i>Mentais</i></p>
-                            <div class="desc">
-                                <span>Inteligência</span>
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd31" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd32" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd33" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd34" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd35" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Raciocínio</span>
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd36" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd37" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd38" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd39" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd40" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Determinação</span>
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd41" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd42" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd43" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd44" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd45" onclick="radiobutton(this)" value="0">
-                                </div>
+                        <div class="desc sem-borda">
+                            <span>Vigor</span>
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd11" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd12" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd13" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd14" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd15" onclick="radiobutton(this)" value="0">
                             </div>
                         </div>
                     </div>
-                    <div class="corpo-e-mente">
-                        <div class="vitalidade">
-                            <span><strong>Vitalidade</strong></span>
-                            <div class="pontos-de-vitalidade">
-                                <div class="ponto" onclick="alterar(this)">
-                                    <img class="estado" id="es1" src="/img/trilhascheckbox/1.png" alt="1">
-                                </div>
-                                <div class="ponto" onclick="alterar(this)">
-                                    <img class="estado" id="es2" src="/img/trilhascheckbox/1.png" alt="1">
-                                </div>
-                                <div class="ponto" onclick="alterar(this)">
-                                    <img class="estado" id="es3" src="/img/trilhascheckbox/1.png" alt="1">
-                                </div>
-                                <div class="ponto" onclick="alterar(this)">
-                                    <img class="estado" id="es4" src="/img/trilhascheckbox/1.png" alt="1">
-                                </div>
-                                <div class="ponto" onclick="alterar(this)">
-                                    <img class="estado" id="es5" src="/img/trilhascheckbox/1.png" alt="1">
-                                </div>
-                                <div class="ponto" onclick="alterar(this)">
-                                    <img class="estado" id="es6" src="/img/trilhascheckbox/1.png" alt="1">
-                                </div>
-                                <div class="ponto" onclick="alterar(this)">
-                                    <img class="estado" id="es7" src="/img/trilhascheckbox/1.png" alt="1">
-                                </div>
-                                <div class="ponto" onclick="alterar(this)">
-                                    <img class="estado" id="es8" src="/img/trilhascheckbox/1.png" alt="1">
-                                </div>
-                                <div class="ponto" onclick="alterar(this)">
-                                    <img class="estado" id="es9" src="/img/trilhascheckbox/1.png" alt="1">
-                                </div>
-                                <div class="ponto" onclick="alterar(this)">
-                                    <img class="estado" id="es10" src="/img/trilhascheckbox/1.png" alt="1">
-                                </div>
+                    <div class="valores">
+                        <p><i>Sociais</i></p>
+                        <div class="desc">
+                            <span>Carisma</span>
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd16" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd17" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd18" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd19" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd20" onclick="radiobutton(this)" value="0">
                             </div>
                         </div>
-                        <div class="vontade">
-                            <span><Strong>Força de Vontade</Strong></span>
-                            <div class="pontos-de-vontade">
-                                <div class="ponto" onclick="alterar(this)">
-                                    <img class="estado" id="es11" src="/img/trilhascheckbox/1.png" alt="1">
-                                </div>
-                                <div class="ponto" onclick="alterar(this)">
-                                    <img class="estado" id="es12" src="/img/trilhascheckbox/1.png" alt="1">
-                                </div>
-                                <div class="ponto" onclick="alterar(this)">
-                                    <img class="estado" id="es13" src="/img/trilhascheckbox/1.png" alt="1">
-                                </div>
-                                <div class="ponto" onclick="alterar(this)">
-                                    <img class="estado" id="es14" src="/img/trilhascheckbox/1.png" alt="1">
-                                </div>
-                                <div class="ponto" onclick="alterar(this)">
-                                    <img class="estado" id="es15" src="/img/trilhascheckbox/1.png" alt="1">
-                                </div>
-                                <div class="ponto" onclick="alterar(this)">
-                                    <img class="estado" id="es16" src="/img/trilhascheckbox/1.png" alt="1">
-                                </div>
-                                <div class="ponto" onclick="alterar(this)">
-                                    <img class="estado" id="es17" src="/img/trilhascheckbox/1.png" alt="1">
-                                </div>
-                                <div class="ponto" onclick="alterar(this)">
-                                    <img class="estado" id="es18" src="/img/trilhascheckbox/1.png" alt="1">
-                                </div>
-                                <div class="ponto" onclick="alterar(this)">
-                                    <img class="estado" id="es19" src="/img/trilhascheckbox/1.png" alt="1">
-                                </div>
-                                <div class="ponto" onclick="alterar(this)">
-                                    <img class="estado" id="es20" src="/img/trilhascheckbox/1.png" alt="1">
-                                </div>
+                        <div class="desc">
+                            <span>Manipulação</span>
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd21" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd22" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd23" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd24" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd25" onclick="radiobutton(this)" value="0">
                             </div>
                         </div>
-                        <!-- Pesquisar como fazer um checkbox de 3 estados com /, x e quadrado pintado. -->
+                        <div class="desc">
+                            <span>Autocontrole</span>
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd26" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd27" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd28" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd29" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd30" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="habilidades">
-                <div class="container">
-                    <p><strong>HABILIDADES</strong></p>
-                    <div class="pontos">
-                        <div class="section">
-                            <div class="desc">
-                                <span>Armas Brancas</span>
-                                <input type="text" id="armasbrancas">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd46" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd47" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd48" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd49" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd50" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Armas de Fogo</span>
-                                <input type="text" id="armasdefogo">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd51" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd52" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd53" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd54" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd55" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Atletismo</span>
-                                <input type="text" id="atletismo">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd56" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd57" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd58" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd59" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd60" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Briga</span>
-                                <input type="text" id="briga">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd61" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd62" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd63" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd64" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd65" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Condução</span>
-                                <input type="text" id="conducao">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd66" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd67" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd68" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd69" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd70" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Furtividade</span>
-                                <input type="text" id="furtividade">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd71" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd72" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd73" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd74" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd75" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Ladroagem</span>
-                                <input type="text" id="ladroagem">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd76" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd77" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd78" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd79" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd80" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Ofícios</span>
-                                <input type="text" id="oficios">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd346" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd347" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd348" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd349" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd350" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Sobrevivência</span>
-                                <input type="text" id="sobrevivencia">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd81" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd82" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd83" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd84" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd85" onclick="radiobutton(this)" value="0">
-                                </div>
+                    <div class="valores">
+                        <p><i>Mentais</i></p>
+                        <div class="desc">
+                            <span>Inteligência</span>
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd31" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd32" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd33" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd34" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd35" onclick="radiobutton(this)" value="0">
                             </div>
                         </div>
-                        <div class="section">
-                            <div class="desc">
-                                <span>Empatia com Animais</span>
-                                <input type="text" id="empatiacomanimais">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd86" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd87" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd88" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd89" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd90" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Etiqueta</span>
-                                <input type="text" id="etiqueta">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd91" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd92" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd93" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd94" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd95" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Intimidação</span>
-                                <input type="text" id="intimidacao">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd96" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd97" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd98" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd99" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd100" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Liderança</span>
-                                <input type="text" id="lideranca">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd101" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd102" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd103" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd104" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd105" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Manha</span>
-                                <input type="text" id="manha">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd106" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd107" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd108" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd109" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd110" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Performance</span>
-                                <input type="text" id="performance">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd111" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd112" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd113" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd114" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd115" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Persuasão</span>
-                                <input type="text" id="persuasao">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd116" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd117" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd118" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd119" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd120" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Sagacidade</span>
-                                <input type="text" id="sagacidade">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd121" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd122" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd123" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd124" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd125" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Subterfúgio</span>
-                                <input type="text" id="subterfugio">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd126" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd127" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd128" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd129" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd130" onclick="radiobutton(this)" value="0">
-                                </div>
+                        <div class="desc">
+                            <span>Raciocínio</span>
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd36" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd37" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd38" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd39" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd40" onclick="radiobutton(this)" value="0">
                             </div>
                         </div>
-                        <div class="section">
-                            <div class="desc">
-                                <span>Ciência</span>
-                                <input type="text" id="ciencia">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd131" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd132" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd133" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd134" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd135" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Erudição</span>
-                                <input type="text" id="erudicao">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd136" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd137" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd138" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd139" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd140" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Finanças</span>
-                                <input type="text" id="financas">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd141" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd142" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd143" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd144" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd145" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Investigação</span>
-                                <input type="text" id="investigacao">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd146" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd147" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd148" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd149" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd150" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Medicina</span>
-                                <input type="text" id="medicina">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd151" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd152" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd153" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd154" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd155" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Ocultismo</span>
-                                <input type="text" id="ocultismo">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd156" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd157" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd158" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd159" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd160" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Percepção</span>
-                                <input type="text" id="percepcao">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd161" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd162" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd163" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd164" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd165" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Política</span>
-                                <input type="text" id="politica">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd166" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd167" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd168" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd169" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd170" onclick="radiobutton(this)" value="0">
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <span>Tecnologia</span>
-                                <input type="text" id="tecnologia">
-                                <div class="qnt-pontos">
-                                    <input type="radio" id="rd171" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd172" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd173" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd174" onclick="radiobutton(this)" value="0">
-                                    <input type="radio" id="rd175" onclick="radiobutton(this)" value="0">
-                                </div>
+                        <div class="desc">
+                            <span>Determinação</span>
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd41" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd42" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd43" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd44" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd45" onclick="radiobutton(this)" value="0">
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="disciplinas">
-                <div class="container">
-                    <p><strong>DISCIPLINAS</strong></p>
-                    <div class="disciplina">
-                        <div class="nome">
-                            <input type="text" id="nd1">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd176" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd177" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd178" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd179" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd180" onclick="radiobutton(this)" value="0">
+                <div class="corpo-e-mente">
+                    <div class="vitalidade">
+                        <span><strong>Vitalidade</strong></span>
+                        <div class="pontos-de-vitalidade">
+                            <div class="ponto" onclick="alterar(this)">
+                                <img class="estado" id="es1" src="/img/trilhascheckbox/1.png" alt="1">
                             </div>
-                        </div>
-                        <input type="text" id="hd11">
-                        <input type="text" id="hd12">
-                        <input type="text" id="hd13">
-                        <input type="text" id="hd14">
-                        <input type="text" id="hd15">
-                    </div>
-                    <div class="disciplina">
-                        <div class="nome">
-                            <input type="text" id="nd2">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd181" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd182" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd183" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd184" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd185" onclick="radiobutton(this)" value="0">
+                            <div class="ponto" onclick="alterar(this)">
+                                <img class="estado" id="es2" src="/img/trilhascheckbox/1.png" alt="1">
                             </div>
-                        </div>
-                        <input type="text" id="hd21">
-                        <input type="text" id="hd22">
-                        <input type="text" id="hd23">
-                        <input type="text" id="hd24">
-                        <input type="text" id="hd25">
-                    </div>
-                    <div class="disciplina">
-                        <div class="nome">
-                            <input type="text" id="nd3">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd186" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd187" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd188" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd189" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd190" onclick="radiobutton(this)" value="0">
+                            <div class="ponto" onclick="alterar(this)">
+                                <img class="estado" id="es3" src="/img/trilhascheckbox/1.png" alt="1">
                             </div>
-                        </div>
-                        <input type="text" id="hd31">
-                        <input type="text" id="hd32">
-                        <input type="text" id="hd33">
-                        <input type="text" id="hd34">
-                        <input type="text" id="hd35">
-                    </div>
-                    <div class="disciplina">
-                        <div class="nome">
-                            <input type="text" id="nd4">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd191" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd192" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd193" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd194" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd195" onclick="radiobutton(this)" value="0">
+                            <div class="ponto" onclick="alterar(this)">
+                                <img class="estado" id="es4" src="/img/trilhascheckbox/1.png" alt="1">
                             </div>
-                        </div>
-                        <input type="text" id="hd41">
-                        <input type="text" id="hd42">
-                        <input type="text" id="hd43">
-                        <input type="text" id="hd44">
-                        <input type="text" id="hd45">
-                    </div>
-                    <div class="disciplina">
-                        <div class="nome">
-                            <input type="text" id="nd5">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd196" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd197" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd198" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd199" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd200" onclick="radiobutton(this)" value="0">
+                            <div class="ponto" onclick="alterar(this)">
+                                <img class="estado" id="es5" src="/img/trilhascheckbox/1.png" alt="1">
                             </div>
-                        </div>
-                        <input type="text" id="hd51">
-                        <input type="text" id="hd52">
-                        <input type="text" id="hd53">
-                        <input type="text" id="hd54">
-                        <input type="text" id="hd55">
-                    </div>
-                    <div class="disciplina">
-                        <div class="nome">
-                            <input type="text" id="nd6">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd201" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd202" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd203" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd204" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd205" onclick="radiobutton(this)" value="0">
+                            <div class="ponto" onclick="alterar(this)">
+                                <img class="estado" id="es6" src="/img/trilhascheckbox/1.png" alt="1">
                             </div>
-                        </div>
-                        <input type="text" id="hd61">
-                        <input type="text" id="hd62">
-                        <input type="text" id="hd63">
-                        <input type="text" id="hd64">
-                        <input type="text" id="hd65">
-                    </div>
-                </div>
-            </div>
-            <div class="stats">
-                <div class="container">
-                    <div class="ressonancia">
-                        <span><strong>Ressonância</strong></span>
-                        <input type="text" id="ressonancia">
-                    </div>
-                    <div class="fome">
-                        <span><strong>Fome</strong></span>
-                        <div class="pontos">
-                            <div class="ponto" onclick="alterarFome(this)">
-                                <img class="estado" id="es21" src="/img/trilhascheckbox/1.png" alt="1">
+                            <div class="ponto" onclick="alterar(this)">
+                                <img class="estado" id="es7" src="/img/trilhascheckbox/1.png" alt="1">
                             </div>
-                            <div class="ponto" onclick="alterarFome(this)">
-                                <img class="estado" id="es22" src="/img/trilhascheckbox/1.png" alt="1">
+                            <div class="ponto" onclick="alterar(this)">
+                                <img class="estado" id="es8" src="/img/trilhascheckbox/1.png" alt="1">
                             </div>
-                            <div class="ponto" onclick="alterarFome(this)">
-                                <img class="estado" id="es23" src="/img/trilhascheckbox/1.png" alt="1">
+                            <div class="ponto" onclick="alterar(this)">
+                                <img class="estado" id="es9" src="/img/trilhascheckbox/1.png" alt="1">
                             </div>
-                            <div class="ponto" onclick="alterarFome(this)">
-                                <img class="estado" id="es24" src="/img/trilhascheckbox/1.png" alt="1">
-                            </div>
-                            <div class="ponto" onclick="alterarFome(this)">
-                                <img class="estado" id="es25" src="/img/trilhascheckbox/1.png" alt="1">
+                            <div class="ponto" onclick="alterar(this)">
+                                <img class="estado" id="es10" src="/img/trilhascheckbox/1.png" alt="1">
                             </div>
                         </div>
                     </div>
-                    <div class="humanidade">
-                        <span><strong>Humanidade</strong></span>
-                        <div class="pontos">
-                            <div class="ponto" onclick="alterarHumanidade(this)">
-                                <img class="estado" id="es26" src="/img/trilhascheckbox/1.png" alt="1">
+                    <div class="vontade">
+                        <span><Strong>Força de Vontade</Strong></span>
+                        <div class="pontos-de-vontade">
+                            <div class="ponto" onclick="alterar(this)">
+                                <img class="estado" id="es11" src="/img/trilhascheckbox/1.png" alt="1">
                             </div>
-                            <div class="ponto" onclick="alterarHumanidade(this)">
-                                <img class="estado" id="es27" src="/img/trilhascheckbox/1.png" alt="1">
+                            <div class="ponto" onclick="alterar(this)">
+                                <img class="estado" id="es12" src="/img/trilhascheckbox/1.png" alt="1">
                             </div>
-                            <div class="ponto" onclick="alterarHumanidade(this)">
-                                <img class="estado" id="es28" src="/img/trilhascheckbox/1.png" alt="1">
+                            <div class="ponto" onclick="alterar(this)">
+                                <img class="estado" id="es13" src="/img/trilhascheckbox/1.png" alt="1">
                             </div>
-                            <div class="ponto" onclick="alterarHumanidade(this)">
-                                <img class="estado" id="es29" src="/img/trilhascheckbox/1.png" alt="1">
+                            <div class="ponto" onclick="alterar(this)">
+                                <img class="estado" id="es14" src="/img/trilhascheckbox/1.png" alt="1">
                             </div>
-                            <div class="ponto" onclick="alterarHumanidade(this)">
-                                <img class="estado" id="es30" src="/img/trilhascheckbox/1.png" alt="1">
+                            <div class="ponto" onclick="alterar(this)">
+                                <img class="estado" id="es15" src="/img/trilhascheckbox/1.png" alt="1">
                             </div>
-                            <div class="ponto" onclick="alterarHumanidade(this)">
-                                <img class="estado" id="es31" src="/img/trilhascheckbox/1.png" alt="1">
+                            <div class="ponto" onclick="alterar(this)">
+                                <img class="estado" id="es16" src="/img/trilhascheckbox/1.png" alt="1">
                             </div>
-                            <div class="ponto" onclick="alterarHumanidade(this)">
-                                <img class="estado" id="es32" src="/img/trilhascheckbox/1.png" alt="1">
+                            <div class="ponto" onclick="alterar(this)">
+                                <img class="estado" id="es17" src="/img/trilhascheckbox/1.png" alt="1">
                             </div>
-                            <div class="ponto" onclick="alterarHumanidade(this)">
-                                <img class="estado" id="es33" src="/img/trilhascheckbox/1.png" alt="1">
+                            <div class="ponto" onclick="alterar(this)">
+                                <img class="estado" id="es18" src="/img/trilhascheckbox/1.png" alt="1">
                             </div>
-                            <div class="ponto" onclick="alterarHumanidade(this)">
-                                <img class="estado" id="es34" src="/img/trilhascheckbox/1.png" alt="1">
+                            <div class="ponto" onclick="alterar(this)">
+                                <img class="estado" id="es19" src="/img/trilhascheckbox/1.png" alt="1">
                             </div>
-                            <div class="ponto" onclick="alterarHumanidade(this)">
-                                <img class="estado" id="es35" src="/img/trilhascheckbox/1.png" alt="1">
+                            <div class="ponto" onclick="alterar(this)">
+                                <img class="estado" id="es20" src="/img/trilhascheckbox/1.png" alt="1">
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="vantagens-defeitos-potencia-xp">
-                <div class="container">
-                    <div class="vantagens">
-                        <span><strong>Vantagens</strong></span>
-                        <div class="vantagem">
-                            <input type="text" id="v1">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd206" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd207" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd208" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd209" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd230" onclick="radiobutton(this)" value="0">
-                            </div>
-                        </div>
-                        <div class="vantagem">
-                            <input type="text" id="v2">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd231" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd232" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd233" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd234" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd235" onclick="radiobutton(this)" value="0">
-                            </div>
-                        </div>
-                        <div class="vantagem">
-                            <input type="text" id="v3">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd236" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd237" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd238" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd239" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd240" onclick="radiobutton(this)" value="0">
-                            </div>
-                        </div>
-                        <div class="vantagem">
-                            <input type="text" id="v4">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd241" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd242" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd243" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd244" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd245" onclick="radiobutton(this)" value="0">
-                            </div>
-                        </div>
-                        <div class="vantagem">
-                            <input type="text" id="v5">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd246" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd247" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd248" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd249" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd250" onclick="radiobutton(this)" value="0">
-                            </div>
-                        </div>
-                        <div class="vantagem">
-                            <input type="text" id="v6">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd251" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd252" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd253" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd254" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd255" onclick="radiobutton(this)" value="0">
-                            </div>
-                        </div>
-                        <div class="vantagem">
-                            <input type="text" id="v7">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd256" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd257" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd258" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd259" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd260" onclick="radiobutton(this)" value="0">
-                            </div>
-                        </div>
-                        <div class="vantagem">
-                            <input type="text" id="v8">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd261" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd262" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd263" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd264" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd265" onclick="radiobutton(this)" value="0">
-                            </div>
-                        </div>
-                        <div class="vantagem">
-                            <input type="text" id="v9">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd266" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd267" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd268" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd269" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd270" onclick="radiobutton(this)" value="0">
-                            </div>
-                        </div>
-                        <div class="vantagem">
-                            <input type="text" id="v10">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd271" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd272" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd273" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd274" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd275" onclick="radiobutton(this)" value="0">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="defeitos">
-                        <span><strong>Defeitos</strong></span>
-                        <div class="vantagem">
-                            <input type="text" id="d1">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd276" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd277" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd278" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd279" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd280" onclick="radiobutton(this)" value="0">
-                            </div>
-                        </div>
-                        <div class="vantagem">
-                            <input type="text" id="d2">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd281" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd282" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd283" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd284" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd285" onclick="radiobutton(this)" value="0">
-                            </div>
-                        </div>
-                        <div class="vantagem">
-                            <input type="text" id="d3">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd286" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd287" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd288" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd289" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd300" onclick="radiobutton(this)" value="0">
-                            </div>
-                        </div>
-                        <div class="vantagem">
-                            <input type="text" id="d4">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd301" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd302" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd303" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd304" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd305" onclick="radiobutton(this)" value="0">
-                            </div>
-                        </div>
-                        <div class="vantagem">
-                            <input type="text" id="d5">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd306" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd307" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd308" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd309" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd310" onclick="radiobutton(this)" value="0">
-                            </div>
-                        </div>
-                        <div class="vantagem">
-                            <input type="text" id="d6">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd311" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd312" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd313" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd314" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd315" onclick="radiobutton(this)" value="0">
-                            </div>
-                        </div>
-                        <div class="vantagem">
-                            <input type="text" id="d7">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd316" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd317" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd318" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd319" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd320" onclick="radiobutton(this)" value="0">
-                            </div>
-                        </div>
-                        <div class="vantagem">
-                            <input type="text" id="d8">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd321" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd322" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd323" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd324" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd325" onclick="radiobutton(this)" value="0">
-                            </div>
-                        </div>
-                        <div class="vantagem">
-                            <input type="text" id="d9">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd326" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd327" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd328" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd329" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd330" onclick="radiobutton(this)" value="0">
-                            </div>
-                        </div>
-                        <div class="vantagem">
-                            <input type="text" id="d10">
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd331" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd332" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd333" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd334" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd335" onclick="radiobutton(this)" value="0">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="potencia-xp">
-                        <div class="potencia">
-                            <span><strong>Potência de Sangue</strong></span>
-                            <div class="qtd-pontos">
-                                <input type="radio" id="rd336" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd337" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd338" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd339" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd340" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd341" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd342" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd343" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd344" onclick="radiobutton(this)" value="0">
-                                <input type="radio" id="rd345" onclick="radiobutton(this)" value="0">
-                            </div>
-                        </div>
-                        <table>
-                            <tr>
-                                <td>
-                                    <span>Surto de Sangue</span>
-                                    <input type="text" id="ss">
-                                </td>
-                                <td>
-                                    <span>Quantidade Recuperada</span>
-                                    <input type="text" id="qr">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>Bônus de Poder</span>
-                                    <input type="text" id="bp">
-                                </td>
-                                <td>
-                                    <span>Rerrolagem de Sangue</span>
-                                    <input type="text" id="rs">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>Penalidade de Alimentação</span>
-                                    <input type="text" id="pa">
-                                </td>
-                                <td>
-                                    <span>Gravidade da Perdição</span>
-                                    <input type="text" id="gp">
-                                </td>
-                            </tr>
-                        </table>
-                        <div class="xp">
-                            <span><strong>Experiência Total</strong></span>
-                            <input type="text" id="et">
-                            <span><strong>Experiência Gasta</strong></span>
-                            <input type="text" id="eg">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+        <div class="habilidades">
+            <div class="container">
+                <p><strong>HABILIDADES</strong></p>
+                <div class="pontos">
+                    <div class="section">
+                        <div class="desc">
+                            <span>Armas Brancas</span>
+                            <input type="text" id="armasbrancas">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd46" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd47" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd48" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd49" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd50" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Armas de Fogo</span>
+                            <input type="text" id="armasdefogo">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd51" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd52" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd53" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd54" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd55" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Atletismo</span>
+                            <input type="text" id="atletismo">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd56" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd57" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd58" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd59" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd60" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Briga</span>
+                            <input type="text" id="briga">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd61" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd62" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd63" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd64" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd65" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Condução</span>
+                            <input type="text" id="conducao">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd66" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd67" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd68" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd69" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd70" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Furtividade</span>
+                            <input type="text" id="furtividade">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd71" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd72" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd73" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd74" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd75" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Ladroagem</span>
+                            <input type="text" id="ladroagem">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd76" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd77" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd78" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd79" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd80" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Ofícios</span>
+                            <input type="text" id="oficios">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd346" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd347" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd348" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd349" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd350" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Sobrevivência</span>
+                            <input type="text" id="sobrevivencia">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd81" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd82" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd83" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd84" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd85" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="desc">
+                            <span>Empatia com Animais</span>
+                            <input type="text" id="empatiacomanimais">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd86" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd87" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd88" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd89" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd90" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Etiqueta</span>
+                            <input type="text" id="etiqueta">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd91" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd92" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd93" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd94" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd95" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Intimidação</span>
+                            <input type="text" id="intimidacao">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd96" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd97" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd98" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd99" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd100" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Liderança</span>
+                            <input type="text" id="lideranca">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd101" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd102" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd103" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd104" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd105" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Manha</span>
+                            <input type="text" id="manha">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd106" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd107" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd108" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd109" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd110" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Performance</span>
+                            <input type="text" id="performance">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd111" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd112" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd113" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd114" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd115" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Persuasão</span>
+                            <input type="text" id="persuasao">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd116" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd117" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd118" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd119" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd120" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Sagacidade</span>
+                            <input type="text" id="sagacidade">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd121" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd122" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd123" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd124" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd125" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Subterfúgio</span>
+                            <input type="text" id="subterfugio">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd126" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd127" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd128" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd129" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd130" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="desc">
+                            <span>Ciência</span>
+                            <input type="text" id="ciencia">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd131" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd132" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd133" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd134" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd135" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Erudição</span>
+                            <input type="text" id="erudicao">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd136" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd137" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd138" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd139" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd140" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Finanças</span>
+                            <input type="text" id="financas">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd141" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd142" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd143" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd144" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd145" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Investigação</span>
+                            <input type="text" id="investigacao">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd146" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd147" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd148" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd149" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd150" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Medicina</span>
+                            <input type="text" id="medicina">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd151" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd152" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd153" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd154" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd155" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Ocultismo</span>
+                            <input type="text" id="ocultismo">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd156" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd157" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd158" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd159" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd160" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Percepção</span>
+                            <input type="text" id="percepcao">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd161" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd162" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd163" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd164" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd165" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Política</span>
+                            <input type="text" id="politica">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd166" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd167" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd168" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd169" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd170" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span>Tecnologia</span>
+                            <input type="text" id="tecnologia">
+                            <div class="qnt-pontos">
+                                <input type="radio" id="rd171" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd172" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd173" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd174" onclick="radiobutton(this)" value="0">
+                                <input type="radio" id="rd175" onclick="radiobutton(this)" value="0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="disciplinas">
+            <div class="container">
+                <p><strong>DISCIPLINAS</strong></p>
+                <div class="disciplina">
+                    <div class="nome">
+                        <input type="text" id="nd1">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd176" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd177" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd178" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd179" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd180" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <input type="text" id="hd11">
+                    <input type="text" id="hd12">
+                    <input type="text" id="hd13">
+                    <input type="text" id="hd14">
+                    <input type="text" id="hd15">
+                </div>
+                <div class="disciplina">
+                    <div class="nome">
+                        <input type="text" id="nd2">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd181" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd182" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd183" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd184" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd185" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <input type="text" id="hd21">
+                    <input type="text" id="hd22">
+                    <input type="text" id="hd23">
+                    <input type="text" id="hd24">
+                    <input type="text" id="hd25">
+                </div>
+                <div class="disciplina">
+                    <div class="nome">
+                        <input type="text" id="nd3">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd186" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd187" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd188" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd189" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd190" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <input type="text" id="hd31">
+                    <input type="text" id="hd32">
+                    <input type="text" id="hd33">
+                    <input type="text" id="hd34">
+                    <input type="text" id="hd35">
+                </div>
+                <div class="disciplina">
+                    <div class="nome">
+                        <input type="text" id="nd4">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd191" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd192" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd193" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd194" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd195" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <input type="text" id="hd41">
+                    <input type="text" id="hd42">
+                    <input type="text" id="hd43">
+                    <input type="text" id="hd44">
+                    <input type="text" id="hd45">
+                </div>
+                <div class="disciplina">
+                    <div class="nome">
+                        <input type="text" id="nd5">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd196" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd197" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd198" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd199" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd200" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <input type="text" id="hd51">
+                    <input type="text" id="hd52">
+                    <input type="text" id="hd53">
+                    <input type="text" id="hd54">
+                    <input type="text" id="hd55">
+                </div>
+                <div class="disciplina">
+                    <div class="nome">
+                        <input type="text" id="nd6">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd201" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd202" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd203" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd204" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd205" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <input type="text" id="hd61">
+                    <input type="text" id="hd62">
+                    <input type="text" id="hd63">
+                    <input type="text" id="hd64">
+                    <input type="text" id="hd65">
+                </div>
+                <div class="disciplina">
+                    <div class="nome">
+                        <input type="text" id="nd7">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd351" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd352" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd353" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd354" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd355" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <input type="text" id="hd71">
+                    <input type="text" id="hd72">
+                    <input type="text" id="hd73">
+                    <input type="text" id="hd74">
+                    <input type="text" id="hd75">
+                </div>
+                <div class="disciplina">
+                    <div class="nome">
+                        <input type="text" id="nd8">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd356" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd357" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd358" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd359" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd360" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <input type="text" id="hd81">
+                    <input type="text" id="hd82">
+                    <input type="text" id="hd83">
+                    <input type="text" id="hd84">
+                    <input type="text" id="hd85">
+                </div>
+                <div class="disciplina">
+                    <div class="nome">
+                        <input type="text" id="nd9">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd361" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd362" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd363" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd364" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd365" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <input type="text" id="hd91">
+                    <input type="text" id="hd92">
+                    <input type="text" id="hd93">
+                    <input type="text" id="hd94">
+                    <input type="text" id="hd95">
+                </div>
+            </div>
+        </div>
+        <div class="stats">
+            <div class="container">
+                <div class="ressonancia">
+                    <span><strong>Ressonância</strong></span>
+                    <input type="text" id="ressonancia">
+                </div>
+                <div class="fome">
+                    <span><strong>Fome</strong></span>
+                    <div class="pontos">
+                        <div class="ponto" onclick="alterarFome(this)">
+                            <img class="estado" id="es21" src="/img/trilhascheckbox/1.png" alt="1">
+                        </div>
+                        <div class="ponto" onclick="alterarFome(this)">
+                            <img class="estado" id="es22" src="/img/trilhascheckbox/1.png" alt="1">
+                        </div>
+                        <div class="ponto" onclick="alterarFome(this)">
+                            <img class="estado" id="es23" src="/img/trilhascheckbox/1.png" alt="1">
+                        </div>
+                        <div class="ponto" onclick="alterarFome(this)">
+                            <img class="estado" id="es24" src="/img/trilhascheckbox/1.png" alt="1">
+                        </div>
+                        <div class="ponto" onclick="alterarFome(this)">
+                            <img class="estado" id="es25" src="/img/trilhascheckbox/1.png" alt="1">
+                        </div>
+                    </div>
+                </div>
+                <div class="humanidade">
+                    <span><strong>Humanidade</strong></span>
+                    <div class="pontos">
+                        <div class="ponto" onclick="alterarHumanidade(this)">
+                            <img class="estado" id="es26" src="/img/trilhascheckbox/1.png" alt="1">
+                        </div>
+                        <div class="ponto" onclick="alterarHumanidade(this)">
+                            <img class="estado" id="es27" src="/img/trilhascheckbox/1.png" alt="1">
+                        </div>
+                        <div class="ponto" onclick="alterarHumanidade(this)">
+                            <img class="estado" id="es28" src="/img/trilhascheckbox/1.png" alt="1">
+                        </div>
+                        <div class="ponto" onclick="alterarHumanidade(this)">
+                            <img class="estado" id="es29" src="/img/trilhascheckbox/1.png" alt="1">
+                        </div>
+                        <div class="ponto" onclick="alterarHumanidade(this)">
+                            <img class="estado" id="es30" src="/img/trilhascheckbox/1.png" alt="1">
+                        </div>
+                        <div class="ponto" onclick="alterarHumanidade(this)">
+                            <img class="estado" id="es31" src="/img/trilhascheckbox/1.png" alt="1">
+                        </div>
+                        <div class="ponto" onclick="alterarHumanidade(this)">
+                            <img class="estado" id="es32" src="/img/trilhascheckbox/1.png" alt="1">
+                        </div>
+                        <div class="ponto" onclick="alterarHumanidade(this)">
+                            <img class="estado" id="es33" src="/img/trilhascheckbox/1.png" alt="1">
+                        </div>
+                        <div class="ponto" onclick="alterarHumanidade(this)">
+                            <img class="estado" id="es34" src="/img/trilhascheckbox/1.png" alt="1">
+                        </div>
+                        <div class="ponto" onclick="alterarHumanidade(this)">
+                            <img class="estado" id="es35" src="/img/trilhascheckbox/1.png" alt="1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vantagens-defeitos-potencia-xp">
+            <div class="container">
+                <div class="vantagens">
+                    <span><strong>Vantagens</strong></span>
+                    <div class="vantagem">
+                        <input type="text" id="v1">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd206" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd207" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd208" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd209" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd230" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <div class="vantagem">
+                        <input type="text" id="v2">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd231" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd232" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd233" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd234" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd235" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <div class="vantagem">
+                        <input type="text" id="v3">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd236" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd237" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd238" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd239" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd240" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <div class="vantagem">
+                        <input type="text" id="v4">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd241" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd242" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd243" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd244" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd245" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <div class="vantagem">
+                        <input type="text" id="v5">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd246" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd247" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd248" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd249" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd250" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <div class="vantagem">
+                        <input type="text" id="v6">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd251" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd252" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd253" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd254" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd255" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <div class="vantagem">
+                        <input type="text" id="v7">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd256" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd257" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd258" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd259" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd260" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <div class="vantagem">
+                        <input type="text" id="v8">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd261" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd262" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd263" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd264" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd265" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <div class="vantagem">
+                        <input type="text" id="v9">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd266" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd267" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd268" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd269" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd270" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <div class="vantagem">
+                        <input type="text" id="v10">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd271" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd272" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd273" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd274" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd275" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                </div>
+                <div class="defeitos">
+                    <span><strong>Defeitos</strong></span>
+                    <div class="vantagem">
+                        <input type="text" id="d1">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd276" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd277" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd278" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd279" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd280" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <div class="vantagem">
+                        <input type="text" id="d2">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd281" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd282" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd283" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd284" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd285" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <div class="vantagem">
+                        <input type="text" id="d3">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd286" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd287" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd288" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd289" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd300" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <div class="vantagem">
+                        <input type="text" id="d4">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd301" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd302" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd303" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd304" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd305" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <div class="vantagem">
+                        <input type="text" id="d5">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd306" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd307" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd308" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd309" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd310" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <div class="vantagem">
+                        <input type="text" id="d6">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd311" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd312" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd313" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd314" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd315" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <div class="vantagem">
+                        <input type="text" id="d7">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd316" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd317" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd318" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd319" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd320" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <div class="vantagem">
+                        <input type="text" id="d8">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd321" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd322" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd323" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd324" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd325" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <div class="vantagem">
+                        <input type="text" id="d9">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd326" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd327" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd328" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd329" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd330" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <div class="vantagem">
+                        <input type="text" id="d10">
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd331" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd332" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd333" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd334" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd335" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                </div>
+                <div class="potencia-xp">
+                    <div class="potencia">
+                        <span><strong>Potência de Sangue</strong></span>
+                        <div class="qtd-pontos">
+                            <input type="radio" id="rd336" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd337" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd338" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd339" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd340" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd341" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd342" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd343" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd344" onclick="radiobutton(this)" value="0">
+                            <input type="radio" id="rd345" onclick="radiobutton(this)" value="0">
+                        </div>
+                    </div>
+                    <table>
+                        <tr>
+                            <td>
+                                <span>Surto de Sangue</span>
+                                <input type="text" id="ss">
+                            </td>
+                            <td>
+                                <span>Quantidade Recuperada</span>
+                                <input type="text" id="qr">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Bônus de Poder</span>
+                                <input type="text" id="bp">
+                            </td>
+                            <td>
+                                <span>Rerrolagem de Sangue</span>
+                                <input type="text" id="rs">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Penalidade de Alimentação</span>
+                                <input type="text" id="pa">
+                            </td>
+                            <td>
+                                <span>Gravidade da Perdição</span>
+                                <input type="text" id="gp">
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="xp">
+                        <span><strong>Experiência Total</strong></span>
+                        <input type="text" id="et">
+                        <span><strong>Experiência Gasta</strong></span>
+                        <input type="text" id="eg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="anotacoes">
+            <div class="container">
+                <p><strong>ANOTAÇÕES</strong></p>
+                <textarea name="anotacoes" id="anotacoes" rows="20" cols="158"></textarea>
+            </div>
+        </div>
+    </div>
+</body>
 
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 
-    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
 
 </html>

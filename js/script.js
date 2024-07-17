@@ -78,10 +78,11 @@ function save() {
     var inputs = document.querySelectorAll('input[type="radio"]');
     var inputstxt = document.querySelectorAll('input[type="text"]');
     var vvfh = document.querySelectorAll(".estado");
+    var anotacoes = document.getElementById("anotacoes");
     // For each inputs...
     inputs.forEach(function (input) {
         // ... save what you want (but 'ID' and 'checked' values are necessary)
-        arrData.push({ id: input.id, checked: input.checked });
+        arrData.push({ id: input.id, checked: input.checked, value: input.value });
     });
     inputstxt.forEach(function (inputtxt) {
         arrData.push({ id: inputtxt.id, value: inputtxt.value });
@@ -89,6 +90,8 @@ function save() {
     vvfh.forEach(function (vvfh) {
         arrData.push({ id: vvfh.id, src: vvfh.src, alt: vvfh.alt });
     });
+    //Save notes
+    arrData.push({ id: anotacoes.id, value: anotacoes.value });
     // Save in localStorage
     localStorage.setItem('inputs', JSON.stringify(arrData));
 
